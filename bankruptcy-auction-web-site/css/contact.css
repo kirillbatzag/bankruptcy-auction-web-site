@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.main-content{
+    margin: 19px auto 0;
+    display: table;
+}
+
+.page-n{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46.88px;
+    margin-top: 40px;
+}
+
+.loca-p{
+    margin-top: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.75px;
+}
+
+main span{
+    font-weight: 700;
+}
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 22px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.info i{
+    padding: 10px;
+    border: #232323 solid 1px;
+    border-radius: 180px;
+    margin-right: 16px;
+    height: fit-content;
+}
+
+.time{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    margin-left: 12px;
+}
+
+.cont{
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 28.13px;
+}
+
+.btn-contant{
+    padding: 11px 20px;
+    border: 1px solid #000000;
+    background: #F1D62B;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14.06px;
+    text-decoration: none;
+    color: #232323;
+    border-radius: 6px;
+    width: fit-content;
+    margin-top: 24px;
+}
+
+.btn-contant:hover{
+    background-color: #FFFFFF;
+    transition: all 0.2s linear 0s;
+}
+
+.map{
+    width: 460px;
+    height: 200px;
+    background-color: #d9d9d9;
+}
+
+.social{
+    margin-top: 40px;
+}
+.social p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.75px;
+}
+
+.soc{
+    display: flex;
+    margin-top: 16px;
+    gap: 12px;
+}

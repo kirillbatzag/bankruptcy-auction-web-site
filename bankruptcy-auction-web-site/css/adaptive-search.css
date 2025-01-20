@@ -1,0 +1,67 @@
+@media (max-width: 940px) {
+  .text-search {
+    width: 81%;
+    font-size: 10px;
+    line-height: 11.72px;
+  }
+  .name-page {
+    font-size: 16px;
+  }
+  .search-box {
+    margin-top: 0px;
+    width: 100%;
+    margin-right: 8px;
+  }
+
+  .search-box img {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 11px;
+  }
+  .seting-search {
+    display: block;
+  }
+  aside {
+    background-color: #f6f6f6;
+    width: 100%;
+  }
+  .slider-track {
+    width: 305px;
+  }
+  .vpc {
+    display: none;
+  }
+  .vm {
+    display: block;
+  }
+  .vm-s {
+    display: flex;
+  }
+  .result-search {
+    margin-left: 0px;
+    margin-top: 16px;
+  }
+  .lot-view {
+    display: none;
+  }
+  .lot-viewM {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .trening-block {
+    display: none;
+  }
+  .ss {
+    display: flex;
+    justify-content: space-between;
+  }
+  .setting-a {
+    display: block;
+    border-radius: 6px;
+    border: #f1d62b solid 1px;
+    height: fit-content;
+    padding: 4px;
+  }
+}

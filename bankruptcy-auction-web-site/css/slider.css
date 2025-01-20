@@ -1,0 +1,151 @@
+/* slider price */
+
+.slider-div{
+    position: relative;
+    height: 100px;
+}
+.price-input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.field input{
+    width: 83px;
+    height: 32px;
+    border: #232323 solid 1px;
+    border-radius: 2px;
+}
+
+.price-input input[type="number"]::-webkit-outer-spin-button,
+.price-input input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+
+.range-slide{
+    display: flex;
+    position: relative;
+}
+
+
+.range-slide input[type="range"]{
+    margin-top: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(35, 35, 35, 0);
+    outline: none;
+    pointer-events: auto;
+    position: absolute;
+    border-radius: 2px;
+}
+
+.slider-track{
+    margin-top: 16px;
+    position: absolute;
+    width: 180px;
+    height: 2px;
+    background-color: #232323;
+    border-radius: 2px;
+}
+
+.range-slide input[type="range"]::-webkit-slider-runnable-track{
+    -webkit-appearance: auto;
+    height: 2px;
+}
+
+.range-slide input[type="range"]::-moz-range-track{
+    -moz-appearance: auto;
+    height: 2px;
+}
+
+.range-slide input[type="range"]::-ms-track{
+    appearance: none;
+    height: 2px;
+}
+
+.range-slide input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 13px;
+    width: 13px;
+    background-color: #F1D62B;
+    border-radius: 180px;
+    cursor: pointer;
+    pointer-events: auto;
+    border: #232323 1px solid;
+    margin-top: -5px;
+}
+
+.range-slide input[type="range"]::-moz-range-thumb{
+    height: 13px;
+    width: 13px;
+    background-color: #F1D62B;
+    border-radius: 180px;
+}
+
+.range-slide input[type="range"]::-ms-thumb{
+    appearance: none;
+    height: 13px;
+    width: 13px;
+    cursor: auto;
+    background-color: #F1D62B;
+}
+
+.range-slide input[type="range"]:active::-webkit-slider-thumb{
+    background-color: rgba(241, 232, 169, 1);
+}
+
+/* для слайдера в Firefox */
+.range-slide input[type="range"]::-moz-range-track {
+    -moz-appearance: none;
+    height: 2px;
+    background-color: rgba(35, 35, 35, 0); /* прозрачный фон для трека */
+}
+
+.range-slide input[type="range"]::-moz-range-thumb {
+    height: 13px;
+    width: 13px;
+    background-color: #F1D62B;
+    border-radius: 50%;
+    border: #232323 1px solid;
+    cursor: pointer;
+}
+
+.range-slide input[type="range"]:active::-moz-range-thumb {
+    background-color: rgba(241, 232, 169, 1);
+}
+
+/* Для стилей трека */
+.range-slide input[type="range"]::-ms-track {
+    appearance: none;
+    width: 100%;
+    height: 2px;
+    background: transparent; /* Для IE */
+    border: none;
+}
+
+.range-slide input[type="range"]:focus::-ms-track {
+    background: transparent; /* для фокуса в IE */
+}
+
+/* Убедитесь, что ползунок будет работать на всех браузерах */
+.range-slide input[type="range"]:focus::-webkit-slider-thumb,
+.range-slide input[type="range"]:active::-webkit-slider-thumb {
+    background-color: #F1D62B;
+    border: #232323 1px solid;
+}
+
+/* Убираем возможные стили, которые могут конфликтовать в Firefox */
+.range-slide input[type="range"]::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    height: 2px;
+}
+
+.range-slide input[type="range"]::-ms-slider-runnable-track {
+    height: 2px;
+    background-color: #232323;
+}
