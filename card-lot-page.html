@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/card-lot.css" />
+    <link rel="stylesheet" href="css/lot-card.css.css" />
+    <link rel="stylesheet" href="css/popup.css" />
+    <link rel="stylesheet" href="css/adaptive.css" />
+    <link rel="stylesheet" href="css/adaptive-card-lot.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/icons.js"></script>
+    <script type="text/javascript" src="js/magnific.js"></script>
+  </head>
+  <body>
+    <div class="main-content">
+      <header>
+        <div class="header-logo">
+          <div class="logo">
+            <img
+              class="logos desktop-logo"
+              src="images/svg/logo.svg"
+              alt="Лого"
+              style="display: block"
+            />
+            <img
+              class="logos mobile-logo"
+              src="images/svg/logo-mobile.svg"
+              alt="Лого"
+              style="display: none"
+            />
+          </div>
+        </div>
+        <nav>
+          <a class="nav_item" href="#">обучение</a>
+          <a class="nav_item" href="#">услуги</a>
+          <a class="nav_item" href="#">о компании</a>
+          <a class="nav_item" href="#">контакты</a>
+          <a class="nav_item" href="#">новости</a>
+        </nav>
+        <div class="location">
+          <i class="msf">location_on</i>
+          <div class="selected-location">
+            <div class="region">
+              <p>Калининградская обл.</p>
+            </div>
+            <div class="switch-rg">
+              <a class="switch" href="#">выбрать регион</a>
+            </div>
+          </div>
+        </div>
+        <a class="button-login" href="#">Вход</a>
+        <a class="menu"><i class="msf">menu</i></a>
+      </header>
+      <main>
+        <article class="main-info">
+          <h1 class="name-pc">
+            Полное название лота с платформы, возможно, не в одну строчку, и
+            даже не в две, но надо чтобы при большом количестве символов все
+            филилось вниз, как в этом автолэйауте
+          </h1>
+          <h1 class="name-tm">
+            Полное название лота с платформы,<br>возможно, не в одну строчку, и
+            даже не в<br>две.
+          </h1>
+        </article>
+        <section class="info-slot">
+          <div class="photo-block">
+            <picture>
+              <img src="images/ychastok.png" />
+            </picture>
+            <div class="AI-p">
+              <p>
+                Организатор торгов не предоставил фото, сгенерировано с помощью
+                ИИ
+              </p>
+            </div>
+          </div>
+          <div class="info-block">
+            <div class="ryad">
+              <div class="req-stat">
+                <div class="status">
+                  <img src="images/svg/аuction.svg" />
+                  <p>Аукцион</p>
+                </div>
+                <p class="ac">Прием заявок</p>
+              </div>
+              <div class="gps-slot">
+                <i class="msf">location_on</i>
+                <p>Калининградская область</p>
+              </div>
+            </div>
+            <div class="ryad c-c">
+              <div class="info-price">
+                <div class="now-price">
+                  <p class="now-p">Текущая цена:</p>
+                  <h3 class="now-h">48 590 000,00 руб.</h3>
+                </div>
+                <div class="old-price">
+                  <p class="old-p opac">Минимальная цена:</p>
+                  <h3 class="old-h opac">4 859 000,00 руб.</h3>
+                </div>
+                <a class="graph-price" href="#price-popup">График цен</a>
+                <div id="price-popup" class="mfp-hide">
+                  <div class="slot">
+                    <div class="close-slot">
+                      <a href="#"><img src="images/mob.png" /></a>
+                    </div>
+                    <table>
+                      <tr class="tr-bor padtop">
+                        <td class="start-td" style="width: 11px">№</td>
+                        <td class="start-td">Начало периода</td>
+                        <td class="start-td">Конец периода</td>
+                        <td class="start-td">Цена</td>
+                      </tr>
+                      <tr>
+                        <td class="num">1</td>
+                        <td>с 12.01.2025</td>
+                        <td>до 22.01.2025</td>
+                        <td>5 497 490,00 руб.</td>
+                      </tr>
+                      <tr>
+                        <td class="num">2</td>
+                        <td>с 12.01.2025</td>
+                        <td>до 22.01.2025</td>
+                        <td>5 497 490,00 руб.</td>
+                      </tr>
+                      <tr>
+                        <td class="num big-slot">3</td>
+                        <td class="big-slot">с 12.01.2025</td>
+                        <td class="big-slot">до 22.01.2025</td>
+                        <td class="big-slot">5 497 490,00 руб.</td>
+                      </tr>
+                      <tr>
+                        <td class="num">4</td>
+                        <td>с 12.01.2025</td>
+                        <td>до 22.01.2025</td>
+                        <td>5 497 490,00 руб.</td>
+                      </tr>
+                      <tr>
+                        <td class="num">5</td>
+                        <td>с 12.01.2025</td>
+                        <td>до 22.01.2025</td>
+                        <td>5 497 490,00 руб.</td>
+                      </tr>
+                      <tr>
+                        <td class="num">6</td>
+                        <td>с 12.01.2025</td>
+                        <td>до 22.01.2025</td>
+                        <td>5 497 490,00 руб.</td>
+                      </tr>
+                      <tr>
+                        <td class="num">7</td>
+                        <td>с 12.01.2025</td>
+                        <td>до 22.01.2025</td>
+                        <td>5 497 490,00 руб.</td>
+                      </tr>
+                      <tr>
+                        <td class="num">8</td>
+                        <td>с 12.01.2025</td>
+                        <td>до 22.01.2025</td>
+                        <td>5 497 490,00 руб.</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="info-data">
+                <p>Сроки подачи заявок</p>
+                <div class="req-text">
+                  <p class="day">с 25.05.2024 г.</p>
+                  <p class="time">11:00 (МСК-1)</p>
+                </div>
+                <div class="req-text2">
+                  <p class="day">с 25.05.2024 г.</p>
+                  <p class="time">11:00 (МСК-1)</p>
+                </div>
+                <p>Дата и время торгов:</p>
+                <div class="req-text3">
+                  <p class="day">с 25.05.2024 г.</p>
+                  <p class="time">11:00 (МСК-1)</p>
+                </div>
+              </div>
+            </div>
+            <div class="ryad">
+              <div class="buttons">
+                <a class="zayavka" href="#zayavka-popup">Оставить заявку</a>
+                <div id="zayavka-popup" class="mfp-hide">
+                  <div class="post-quest">
+                    <form>
+                      <div class="heads">
+                        <h3>Оставить заявку по лоту</h3>
+                        <a class="popup-close" href="#"
+                          ><img src="images/svg/close.svg" alt="Закрыть"
+                        /></a>
+                      </div>
+                      <input
+                        type="text"
+                        placeholder="Имя"
+                        class="input-lg postic"
+                      />
+                      <input
+                        type="text"
+                        placeholder="Номер телефона"
+                        class="input-lg postic"
+                      />
+                      <div>
+                        <button class="btn-lg btn-post">Отправить</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <a class="etp" href="#">ЭТП</a>
+              </div>
+              <div class="r-link">
+                <a class="a-link" href="#">
+                  <i class="msf">desktop_windows</i>
+                </a>
+                <a class="a-link" href="#">
+                  <i class="msf">delete</i>
+                </a>
+                <a class="a-link" href="#">
+                  <i class="msf">comment</i>
+                </a>
+                <a class="a-link" href="#">
+                  <i class="msf">favorite</i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="info-more-slot">
+          <div class="btn-top">
+            <a class="f-btn" href="#">Сведения по лоту</a>
+            <a class="btn-a" href="#">Информация о торгах</a>
+            <a class="btn-a" href="#">Сведения об организаторе торгов</a>
+            <a class="btn-a" href="#">Документы</a>
+          </div>
+        </section>
+        <section class="info-inf">
+          <div class="info-text">
+            <p class="name-info">Регион</p>
+            <p class="info-sec">Регион</p>
+          </div>
+
+          <div class="info-text">
+            <p class="name-info">Тип торгов</p>
+            <p class="info-sec">Тип торгов</p>
+          </div>
+
+          <div class="info-text">
+            <p class="name-info">Секция торгов</p>
+            <p class="info-sec">Секция торгов</p>
+          </div>
+
+          <div class="info-text">
+            <p class="name-info">Начальная стоимость</p>
+            <p class="info-sec">Начальная стоимость</p>
+          </div>
+
+          <div class="info-text">
+            <p class="name-info">Общая информация</p>
+            <p class="info-sec">
+              Общая информация<br />Текст растягивает блок вниз<br />вот таким
+              образом
+            </p>
+          </div>
+        </section>
+        <section>
+          <div class="trening-block">
+            <h2>Пройди обучение торгам по банкротству</h2>
+            <a href="" class="get-more-info">Узнать подробнее</a>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="footer-block">
+          <div class="block-info">
+            <div class="more-link">
+              <a href="#">Обучение</a>
+              <a href="#" style="margin-top: 4px">Поиск лотов</a>
+              <a href="#" style="margin-top: 4px">Услуги</a>
+              <a href="#" style="margin-top: 4px">О компании</a>
+              <a href="#" style="margin-top: 4px">Контакты</a>
+            </div>
+            <div class="more-link">
+              <a href="#">Политика обработки<br />персональных данных</a>
+              <a href="#" style="margin-top: 4px">Договор оферты</a>
+              <a href="#" style="margin-top: 4px">Реквизиты</a>
+            </div>
+          </div>
+          <div class="social-addres-link">
+            <div class="social-link">
+              <a href="#"><img src="images/svg/vk.svg" /></a>
+              <a href="#"><img src="images/svg/ok.svg" /></a>
+              <a href="#"><img src="images/svg/telegram.svg" /></a>
+            </div>
+            <div class="addres-number">
+              <a class="phone-footer" href="tel:+79999999999"
+                >+7 999 999 99 99</a
+              >
+              <p class="addres-footer">
+                г.Калининград, ул. Площадь Маршала Василевского, 2
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-block-m">
+            <div class="social-link">
+                <a href="#"><img src="images/svg/vk.svg"></a>
+                <a href="#"><img src="images/svg/ok.svg"></a>
+                <a href="#"><img src="images/svg/telegram.svg"></a>
+            </div>
+            <div class="addres-number">
+                <a class="phone-footer" href="tel:+79999999999">+7 999 999 99 99</a>
+                <p class="addres-footer">г.Калининград, ул. Площадь Маршала Василевского, 2</p>
+            </div>
+            </div>
+            <div class="block-info">
+                <div class="more-link">
+                    <a href="#">Обучение</a>
+                    <a href="#" style="margin-top: 4px;">Поиск лотов</a>
+                    <a href="#" style="margin-top: 4px;">Услуги</a>
+                    <a href="#" style="margin-top: 4px;">О компании</a>
+                    <a href="#" style="margin-top: 4px;">Контакты</a>
+                </div>
+                <div class="more-link">
+                    <a href="#">Политика обработки<br>персональных данных</a>
+                    <a href="#" style="margin-top: 4px;">Договор оферты</a>
+                    <a href="#" style="margin-top: 4px;">Реквизиты</a>
+                </div>
+            </div>
+
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

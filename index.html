@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+    <link rel="stylesheet" href="css/adaptive-index.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/icons.js"></script>
+    <script type="text/javascript" src="js/magnific.js"></script>
+
+</head>
+<body>
+  <div class="main-c-m">
+    <div class="login-popup mfp-hide">
+        <div class="content-login">
+            <div class="info-login">
+                <p class="pop-text-login">Вход в личный кабинет</p>
+                <a href="#" class="close-popup"><img src="images/svg/close.svg"></a>
+            </div>
+            <div class="login-form">
+                <form class="login">
+                    <input type="text" placeholder="Логин" class="input-lg">
+                    <input type="password" placeholder="Пароль" class="input-lg" style="margin-top: 8px;">
+                    <div class="bts-lg">
+                        <button class="btn-lg">Войти</button>
+                        <button class="btn-reg">Зарегистрироваться</button>
+                    </div>
+                    <a href="#" class="link-restore">Восстановить пароль</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+            <header>
+                <div class="header-logo">
+                    <div class="logo">
+                        <img class="logos desktop-logo" src="images/svg/logo.svg" alt="Лого" style="display: block;">
+                        <img class="logos mobile-logo" src="images/svg/logo-mobile.svg" alt="Лого" style="display: none;">
+                    </div>
+                </div>
+                
+                <nav>
+                    <a class="nav_item" href="#">обучение</a>
+                    <a class="nav_item" href="#">услуги</a>
+                    <a class="nav_item" href="#">о компании</a>
+                    <a class="nav_item" href="#">контакты</a>
+                    <a class="nav_item" href="#">новости</a>
+                </nav>
+                <div class="location">
+                    <div class="over-rg">
+                        <div class="confirm-rg" id="region-popup">
+                            <div class="content-confirm">
+                                <div class="confirm">
+                                    <h3>Вы находитесь<br>в Калининградской области?</h3>
+                                    <form>
+                                        <div class="chande-btn">
+                                            <button class="btn-form yes">Да</button>
+                                            <button class="btn-form no">Нет</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="change-rg">
+                                    <a>Вам будут показаны лоты из выбранного региона</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <i class="msf">location_on</i>
+                    <div class="selected-location">
+                        <div class="region">
+                            <p>Калининградская обл.</p>
+                        </div>
+                        <a class="switch" href="#">выбрать регион</a>
+                    </div>
+                </div>
+                <div class="over-region" style="display: none;">
+                    <div class="region-popup">
+                        <div class="close">
+                            <a href="#" class="close-popup" id="close-popup"><i class="mso">close</i></a>
+                        </div>
+                        <div class="region">
+                            <div class="first-region" style="margin-right: 16px; margin-left: 12px;">
+                                <ul>
+                                    <li><a href="#" class="li_rg">Респ. Адыгея</a></li>
+                                    <li><a href="#" class="li_rg">Респ. Башкортостан</a></li>
+                                    <li><a href="#" class="li_rg">Калининградская обл.</a></li>
+                                    <li><a href="#" class="li_rg">Новгородская обл.</a></li>
+                                    <li><a href="#" class="li_rg">Московская обл.</a></li>
+                                    <li><a href="#" class="li_rg">Ханты-Мансийский АО</a></li>
+                                    <li><a href="#" class="li_rg">Респ. Чувашская</a></li>
+                                </ul>
+                            </div>
+                            <div class="second-region" style="margin-right: 12px;">
+                                <ul>
+                                    <li><a href="#" class="li_rg">Респ. Адыгея</a></li>
+                                    <li><a href="#" class="li_rg">Респ. Башкортостан</a></li>
+                                    <li><a href="#" class="li_rg">Калининградская обл.</a></li>
+                                    <li><a href="#" class="li_rg">Новгородская обл.</a></li>
+                                    <li><a href="#" class="li_rg">Московская обл.</a></li>
+                                    <li><a href="#" class="li_rg">Ханты-Мансийский АО</a></li>
+                                    <li><a href="#" class="li_rg">Респ. Чувашская</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="button-login" href="#">Вход</a>
+                <a class="menu">
+                    <hr>
+                    <hr>
+                    <hr>
+                </a>
+                <div class="m-menu">
+                    <a href="#">Обучение</a>
+                    <a href="#">Услуги</a>
+                    <a href="#">О компании</a>
+                    <a href="#">Контакты</a>
+                    <a href="#">Вход</a>
+                </div>
+            </header>
+                <div class="link-social-popup">
+                    <div class="text-content-links">
+                        <h3>Присоединяйтесь к нам, чтобы<br>получать свежие предложения</h3>
+                    </div>
+                    <div class="links-social">
+                        <a href="#"><img src="images/svg/telegram.svg"></a>
+                        <a href="#"><img src="images/svg/vk.svg"></a>
+                        <a href="#"><img src="images/svg/ok.svg"></a>
+                    </div>
+                </div>
+                <article class="info-card">
+                    <section class="training-profession">
+                        <div class="training-info">
+                            <h2>Обучим професии<br>“Агент по продаже с торгов”</h2>
+                            <p>для самостоятельного участия в торгах</p>
+                            <ul class="trening-ul">
+                                <li><span class="span-li-circle"></span>Перспективная профессия</li>
+                                <li><span class="span-li-circle"></span>Три тарифа обучения от 1 месяца</li>
+                                <li><span class="span-li-circle"></span>Уроки в записи, проверочные тесты<br>и практические задания</li>
+                                <li><span class="span-li-circle"></span>Чат поддержки</li>
+                            </ul>
+                            <a class="training-get-info" href="#">Подробнее</a>
+                        </div>
+                    </section>
+                    <section class="help-bargaining">
+                        <div class="bargaining-info">
+                            <h2>Поможем с участием в торгах</h2>
+                            <p>договор сопровождения на 3 месяца</p>
+                            <ul class="trening-ul">
+                                <li><span class="span-li-circle"></span>Неограниченное количество лотов </li>
+                                <li><span class="span-li-circle"></span>Оформим все необходимые документы</li>
+                                <li><span class="span-li-circle"></span>Отправим заявку на площадку</li>
+                                <li><span class="span-li-circle"></span>Поможем оформить ЭЦП</li>
+                            </ul>
+                            <a class="bargaining-info-btn" href="#">Подробнее</a>
+                        </div>
+                    </section>
+                </article>
+                <article class="info-help-param">
+                    <h1>Поможем купить на аукционе</h1>
+                    <a class="search-param-btn" href="#">Поиск по параметрам</a>
+                </article>
+                <article class="announcement">
+
+                    <div class="card-sell">
+                        <div class="top-card">
+                            <a href="#"><img class="img-card" src="images/card-sell1.png"></a>
+                            <a href="#" class="fav_ads"><i class="mso">favorite</i></a>
+                            <img class="svg-logo-card" alt="Лого для карточки" src="images/svg/logo-card.svg">
+                            <div class="status">
+                                <img src="images/svg/аuction.svg">
+                                <p>аукцион</p>
+                            </div>
+                        </div>
+                        <div class="bottom-card">
+                            <a href="#" class="link-tc"><h3>Название лота в 3 строчки<br>название лота в 3 строчки<br>название лота в 3 строч...</h3></a>
+                            <div class="data-card">
+                                <div class="start-price">
+                                    <p>Начальная цена:</p>
+                                    <a href="#" class="link-tc"><h4>590 000,00 руб.</h4></a>
+                                </div>
+                                <div class="reception">
+                                    <p>Прием заявок до:</p>
+                                    <a href="#" class="link-tc"><h4>25.05.2024 г.</h4></a>
+                                </div>
+                            </div>
+                            <div class="more-data-card">
+                                <div class="icon-links-data">
+                                    <a href="#" class="icon-link"><i class="msf">desktop_windows</i></a>
+                                    <a href="#" class="icon-link"><i class="msf">delete</i></a>
+                                </div>
+                                <a class="btn-atp-link" href="#">ЭТП</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-sell">
+                        <div class="top-card">
+                            <a href="#"><img class="img-card" src="images/map-sell2.png"></a>
+                            <a href="#" class="fav_ads"><i class="mso">favorite</i></a>
+                            <img class="svg-logo-card" alt="Лого для карточки" src="images/svg/logo-card.svg">
+                            <div class="status">
+                                <img src="images/svg/аuction.svg">
+                                <p>аукцион</p>
+                            </div>
+                        </div>
+                        <div class="bottom-card">
+                            <a href="#" class="link-tc"><h3>Название лота в 3 строчки<br>название лота в 3 строчки<br>название лота в 3 строч...</h3></a>
+                            <div class="data-card">
+                                <div class="start-price">
+                                    <p>Начальная цена:</p>
+                                    <a href="#" class="link-tc"><h4>590 000,00 руб.</h4></a>
+                                </div>
+                                <div class="reception">
+                                    <p>Прием заявок до:</p>
+                                    <a href="#" class="link-tc"><h4>25.05.2024 г.</h4></a>
+                                </div>
+                            </div>
+                            <div class="more-data-card">
+                                <div class="icon-links-data">
+                                    <a href="#" class="icon-link"><i class="msf">desktop_windows</i></a>
+                                    <a href="#" class="icon-link"><i class="msf">delete</i></a>
+                                </div>
+                                <a class="btn-atp-link" href="#">ЭТП</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-sell">
+                        <div class="top-card">
+                            <a href="#"><img class="img-card" src="images/map-sell3.png"></a>
+                            <a href="#" class="fav_ads"><i class="mso">favorite</i></a>
+                            <img class="svg-logo-card" alt="Лого для карточки" src="images/svg/logo-card.svg">
+                            <div class="status" id="stat-com">
+                                <img src="images/svg/commynity.svg">
+                                <p>публичное предложение</p>
+                            </div>
+                        </div>
+                        <div class="bottom-card">
+                            <a href="#" class="link-tc"><h3>Название лота в 3 строчки<br>название лота в 3 строчки<br>название лота в 3 строч...</h3></a>
+                            <div class="data-card">
+                                <div class="start-price">
+                                    <p>Начальная цена:</p>
+                                    <a href="#" class="link-tc"><h4>590 000,00 руб.</h4></a>
+                                </div>
+                                <div class="reception">
+                                    <p>Прием заявок до:</p>
+                                    <a href="#" class="link-tc"><h4>25.05.2024 г.</h4></a>
+                                </div>
+                            </div>
+                            <div class="more-data-card">
+                                <div class="icon-links-data">
+                                    <a href="#" class="icon-link"><i class="msf">desktop_windows</i></a>
+                                    <a href="#" class="icon-link"><i class="msf">delete</i></a>
+                                </div>
+                                <a class="btn-atp-link" href="#">ЭТП</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-sell">
+                        <div class="top-card">
+                            <a href="#"><img class="img-card" src="images/map-sell4.png"></a>
+                            <a href="#" class="fav_ads"><i class="mso">favorite</i></a>
+                            <img class="svg-logo-card" alt="Лого для карточки" src="images/svg/logo-card.svg">
+                            <div class="status">
+                                <img src="images/svg/аuction.svg">
+                                <p>аукцион</p>
+                            </div>
+                        </div>
+                        <div class="bottom-card">
+                            <a href="#" class="link-tc"><h3>Название лота в 3 строчки<br>название лота в 3 строчки<br>название лота в 3 строч...</h3></a>
+                            <div class="data-card">
+                                <div class="start-price">
+                                    <p>Начальная цена:</p>
+                                    <a href="#" class="link-tc"><h4>590 000,00 руб.</h4></a>
+                                </div>
+                                <div class="reception">
+                                    <p>Прием заявок до:</p>
+                                    <a href="#" class="link-tc"><h4>25.05.2024 г.</h4></a>
+                                </div>
+                            </div>
+                            <div class="more-data-card">
+                                <div class="icon-links-data">
+                                    <a href="#" class="icon-link"><i class="msf">desktop_windows</i></a>
+                                    <a href="#" class="icon-link"><i class="msf">delete</i></a>
+                                </div>
+                                <a class="btn-atp-link" href="#">ЭТП</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                
+            
+
+
+                <div class="linked-more-card">
+                    <a class="watching-more-card" href="#">
+                        смотреть еще
+                    </a>
+                </div>
+                <a class="find-param" href="#">Поиск по параметрам</a>
+                <article class="about">
+                    <h2>О компании Тендеркейс</h2>
+                    <div class="about-text">
+                        <p>Мы — активно развивающаяся компания Тендеркейс с командой агентов по покупке имущества с торгов.<br>С 2023 года количество желающих приобрести имущество с торгов увеличилось в три раза, в связи с чем<br>возникла потребность и в агентах.<br>Наши представители есть в десятках городов России и успешно работают даже в удаленном формате.<br><br>Компания Тендеркейс оказывает помощь в покупке любого имущества на торгах, как со своей ЭЦП<br>на условиях агентского договора, так и с ЭЦП  клиента:</p>
+                        
+                    </div>
+                    <div class="a-t-m">
+                        <p>Мы — активно развивающаяся компания Тендеркейс с командой<br>агентов по покупке имущества с торгов.<br>С 2023 года количество желающих приобрести имущество с торгов<br>увеличилось в три раза, в связи с чем возникла потребность<br>и в агентах.<br>Наши представители есть в десятках городов России и успешно<br>работают даже в удаленном формате.<br><br>Компания Тендеркейс оказывает помощь в покупке любого<br>имущества на торгах, как со своей ЭЦП на условиях агентского<br>договора, так и с ЭЦП  клиента:</p>
+                        
+                    </div>
+                    <div class="about-me">
+                        <div class="ait">
+                            <img src="images/svg/about1.svg">
+                            <p class="big-p">Оформляем ЭЦП</p>
+                        </div>
+                        <div class="ait">
+                            <img src="images/svg/about2.svg">
+                            <p class="big-p">Подготовливаем<br>все документы</p>
+                        </div>
+                        <div class="ait">
+                            <img src="images/svg/about3.svg">
+                            <p class="big-p">Принимаем участие<br>в торгах</p>
+                        </div>
+                    </div>
+                    <div class="info-add-about">
+                        <p class="info-help-about">Для клиента покупка любого объекта не будет отличаться от стандартной процедуры покупки<br>недвижимости.<br>Также наша компания помогает в поиске имущества с торгов: по банкротству, по продаже арестованного,<br>конфискованного имущества, государственного имущества и имущества госкорпораций — автомобилей,<br>квартир, домов, земельных участков, коммерческой недвижимости, автомобилей, спецтехники и прочего<br>по ценам ниже рыночных.<br>Новые лоты клиенты могут увидеть в реальном времени в нашем <a class="link-help-p" href="#">Телеграм-канале</a>, а также узнать всё<br>о торгах по банкротству в нашей группе <a class="link-help-p" href="#">ВКонтакте</a> и <a class="link-help-p" href="#">Одноклассниках</a>.</p>
+                    </div>
+                </article>
+                <article class="offers wrapper wv">
+                    <h2 class="offers-heading">Наши предложение</h2>
+                    <div class="items">
+                        <div class="item bg-1">
+                            <div class="name-plash">
+                                <i class="msf">star</i>
+                                Новинка
+                            </div>
+                            <div class="info">
+                                <div class="title">
+                                Пошаговый гайд по покупке имущества с торгов
+                                </div>
+                                <ul>
+                                <li><span class="span-li-circle"></span>PDF-файл с алгоритмом подачи заявки</li>
+                                <li><span class="span-li-circle"></span>Образцы заполнения документов</li>
+                                <li><span class="span-li-circle"></span>Доступ к чату на 1 месяц</li>
+                                </ul>
+                            </div>
+                            <div class="bottom">
+                                <div class="price">
+                                <del class="old">9 000 руб.</del>
+                                <div class="now"><span>5 000</span> руб.</div>
+                                </div>
+                                <a href="#" class="button hidden">Скоро в продаже</a>
+                            </div>
+                        </div>
+                        <div class="item bg-2">
+                            <div class="name-plash">
+                            <i class="msf">star</i>
+                            Новинка
+                            </div>
+                            <div class="info">
+                            <div class="title">
+                                Разовая сделка
+                            </div>
+                            <ul>
+                                <li><span class="span-li-circle"></span>Поможем подобрать выгодный лот</li>
+                                <li><span class="span-li-circle"></span>Оформим все необходимые документы</li>
+                                <li><span class="span-li-circle"></span>Отправим заявку на площадку</li>
+                                <li><span class="span-li-circle"></span>В день торгов участвуем за вас в акцуионе</li>
+                                <li><span class="span-li-circle"></span>Поможем оформить ЭЦП</li>
+                                <li><span class="span-li-circle"></span>Действует на одну заявку</li>
+                            </ul>
+                            </div>
+                            <div class="bottom">
+                            <div class="price">
+                                <del class="old"></del>
+                                <div class="now"><span>5 000</span> руб.</div>
+                            </div>
+                            <a href="#" class="button">Оплатить</a>
+                            </div>
+                        </div>
+                        <div class="item bg-3">
+                            <div class="name-plash">
+                            <i class="msf">star</i>
+                            Выгодное предложение
+                            </div>
+                            <div class="info">
+                            <div class="title">
+                                Сопровождение
+                            </div>
+                            <ul>
+                                <li><span class="span-li-circle"></span>Действует в течение 3 месяцев на неограниченное количество лотов </li>
+                                <li><span class="span-li-circle"></span>Поможем подобрать выгодные лоты</li>
+                                <li><span class="span-li-circle"></span>Оформим все необходимые документы</li>
+                                <li><span class="span-li-circle"></span>Отправим заявку на площадку</li>
+                                <li><span class="span-li-circle"></span>В день торгов участвуем за вас в акцуионе</li>
+                                <li><span class="span-li-circle"></span>Поможем оформить ЭЦП</li>
+                            </ul>
+                            </div>
+                            <div class="bottom">
+                            <div class="price">
+                                <del class="old"></del>
+                                <div class="now"><span>15 000</span> руб.</div>
+                            </div>
+                            <a href="#" class="button">Оплатить</a>
+                            </div>
+                        </div>
+                        <div class="item bg-4">
+                            <div class="name-plash">
+                            <i class="msf">star</i>
+                            Выгодное предложение
+                            </div>
+                            <div class="info">
+                            <div class="title">
+                                Профессия “Агент по покупке имущества с торгов”
+                            </div>
+                            <ul>
+                                <li><span class="span-li-circle"></span>Три тарифа обучения</li>
+                                <li><span class="span-li-circle"></span>Уроки в записи, проверочные тесты и практические задания</li>
+                                <li><span class="span-li-circle"></span>Чат поддержки</li>
+                            </ul>
+                            </div>
+                            <div class="bottom">
+                            <div class="price">
+                                <del class="old"></del>
+                                <div class="now"><span>19 990</span> руб.</div>
+                            </div>
+                            <a href="#" class="button">Перейти на сайт курса</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="offers wrapper wrapper-mobile">
+                    <h2 class="offers-heading">Наши предложение</h2>
+                    <div class="items">
+                        <div class="item bg-3">
+                            <div class="name-plash">
+                            <i class="msf">star</i>
+                            Выгодное предложение
+                            </div>
+                            <div class="info">
+                            <div class="title">
+                                Сопровождение
+                            </div>
+                            <ul>
+                                <li><span class="span-li-circle"></span>Действует в течение 3 месяцев на<br>неограниченное количество лотов </li>
+                                <li><span class="span-li-circle"></span>Поможем подобрать выгодные лоты</li>
+                                <li><span class="span-li-circle"></span>Оформим все необходимые документы</li>
+                                <li><span class="span-li-circle"></span>Отправим заявку на площадку</li>
+                                <li><span class="span-li-circle"></span>В день торгов участвуем за вас в акцуионе</li>
+                                <li><span class="span-li-circle"></span>Поможем оформить ЭЦП</li>
+                            </ul>
+                            </div>
+                            <div class="bottom">
+                            <div class="price">
+                                <del class="old"></del>
+                                <div class="now"><span>15 000</span> руб.</div>
+                            </div>
+                            <a href="#" class="button">Оплатить</a>
+                            </div>
+                        </div>
+                        <div class="item bg-3">
+                            <div class="name-plash">
+                            <i class="msf">star</i>
+                            Выгодное предложение
+                            </div>
+                            <div class="info">
+                            <div class="title">
+                                Сопровождение
+                            </div>
+                            <ul>
+                                <li><span class="span-li-circle"></span>Действует в течение 3 месяцев на<br>неограниченное количество лотов </li>
+                                <li><span class="span-li-circle"></span>Поможем подобрать выгодные лоты</li>
+                                <li><span class="span-li-circle"></span>Оформим все необходимые документы</li>
+                                <li><span class="span-li-circle"></span>Отправим заявку на площадку</li>
+                                <li><span class="span-li-circle"></span>В день торгов участвуем за вас в акцуионе</li>
+                                <li><span class="span-li-circle"></span>Поможем оформить ЭЦП</li>
+                            </ul>
+                            </div>
+                            <div class="bottom">
+                            <div class="price">
+                                <del class="old"></del>
+                                <div class="now"><span>15 000</span> руб.</div>
+                            </div>
+                            <a href="#" class="button">Оплатить</a>
+                            </div>
+                        </div>
+                        <div class="item bg-3">
+                            <div class="name-plash">
+                            <i class="msf">star</i>
+                            Выгодное предложение
+                            </div>
+                            <div class="info">
+                            <div class="title">
+                                Сопровождение
+                            </div>
+                            <ul>
+                                <li><span class="span-li-circle"></span>Действует в течение 3 месяцев на<br>неограниченное количество лотов</li>
+                                <li><span class="span-li-circle"></span>Поможем подобрать выгодные лоты</li>
+                                <li><span class="span-li-circle"></span>Оформим все необходимые документы</li>
+                                <li><span class="span-li-circle"></span>Отправим заявку на площадку</li>
+                                <li><span class="span-li-circle"></span>В день торгов участвуем за вас в акцуионе</li>
+                                <li><span class="span-li-circle"></span>Поможем оформить ЭЦП</li>
+                            </ul>
+                            </div>
+                            <div class="bottom">
+                            <div class="price">
+                                <del class="old"></del>
+                                <div class="now"><span>15 000</span> руб.</div>
+                            </div>
+                            <a href="#" class="button">Оплатить</a>
+                            </div>
+                        </div>
+                        <div class="item bg-3">
+                            <div class="name-plash">
+                            <i class="msf">star</i>
+                            Выгодное предложение
+                            </div>
+                            <div class="info">
+                            <div class="title">
+                                Сопровождение
+                            </div>
+                            <ul>
+                                <li><span class="span-li-circle"></span>Действует в течение 3 месяцев на<br>неограниченное количество лотов</li>
+                                <li><span class="span-li-circle"></span>Поможем подобрать выгодные лоты</li>
+                                <li><span class="span-li-circle"></span>Оформим все необходимые документы</li>
+                                <li><span class="span-li-circle"></span>Отправим заявку на площадку</li>
+                                <li><span class="span-li-circle"></span>В день торгов участвуем за вас в акцуионе</li>
+                                <li><span class="span-li-circle"></span>Поможем оформить ЭЦП</li>
+                            </ul>
+                            </div>
+                            <div class="bottom">
+                            <div class="price">
+                                <del class="old"></del>
+                                <div class="now"><span>15 000</span> руб.</div>
+                            </div>
+                            <a href="#" class="button">Оплатить</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            
+        </main>
+        
+    </div>
+    <footer>
+            <div class="footer-block">
+                <div class="block-info">
+                    <div class="more-link">
+                        <a href="#">Обучение</a>
+                        <a href="#" style="margin-top: 4px;">Поиск лотов</a>
+                        <a href="#" style="margin-top: 4px;">Услуги</a>
+                        <a href="#" style="margin-top: 4px;">О компании</a>
+                        <a href="#" style="margin-top: 4px;">Контакты</a>
+                    </div>
+                    <div class="more-link">
+                        <a href="#">Политика обработки<br>персональных данных</a>
+                        <a href="#" style="margin-top: 4px;">Договор оферты</a>
+                        <a href="#" style="margin-top: 4px;">Реквизиты</a>
+                    </div>
+                </div>
+                <div class="social-addres-link">
+                    <div class="social-link">
+                        <a href="#"><img src="images/svg/vk.svg"></a>
+                        <a href="#"><img src="images/svg/ok.svg"></a>
+                        <a href="#"><img src="images/svg/telegram.svg"></a>
+                    </div>
+                    <div class="addres-number">
+                        <a class="phone-footer" href="tel:+79999999999">+7 999 999 99 99</a>
+                        <p class="addres-footer">г.Калининград, ул. Площадь Маршала Василевского, 2</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-block-m">
+                <div class="social-link">
+                    <a href="#"><img src="images/svg/vk.svg"></a>
+                    <a href="#"><img src="images/svg/ok.svg"></a>
+                    <a href="#"><img src="images/svg/telegram.svg"></a>
+                </div>
+                <div class="addres-number">
+                    <a class="phone-footer" href="tel:+79999999999">+7 999 999 99 99</a>
+                    <p class="addres-footer">г.Калининград, ул. Площадь Маршала Василевского, 2</p>
+                </div>
+                <div class="block-info">
+                    <div class="more-link">
+                        <a href="#">Обучение</a>
+                        <a href="#" style="margin-top: 4px;">Поиск лотов</a>
+                        <a href="#" style="margin-top: 4px;">Услуги</a>
+                        <a href="#" style="margin-top: 4px;">О компании</a>
+                        <a href="#" style="margin-top: 4px;">Контакты</a>
+                    </div>
+                    <div class="more-link">
+                        <a href="#">Политика обработки<br>персональных данных</a>
+                        <a href="#" style="margin-top: 4px;">Договор оферты</a>
+                        <a href="#" style="margin-top: 4px;">Реквизиты</a>
+                    </div>
+                </div>
+    
+            </div>
+        </footer>
+    <script src="script.js"></script>
+</div>    
+</body>
+</html>

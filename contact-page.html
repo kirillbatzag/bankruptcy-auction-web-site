@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/icons.js"></script>
+    <script type="text/javascript" src="js/magnific.js"></script>
+</head>
+<body>
+    <div class="main-content">
+        <header>
+            <div class="header-logo">
+                <div class="logo">
+                    <a href="#" style="display: table;"><img src="images/svg/logo.svg" alt="Лого" style="display: block;"></a>
+                </div>
+            </div>
+            <nav>
+                <a class="nav_item" href="#">обучение</a>
+                <a class="nav_item" href="#">услуги</a>
+                <a class="nav_item" href="#">о компании</a>
+                <a class="nav_item" href="#">контакты</a>
+                <a class="nav_item" href="#">новости</a>
+            </nav>
+            <div class="location">
+                <i class="msf">location_on</i>
+                <div class="selected-location">
+                    <div class="region">
+                        <p>Калининградская обл.</p>
+                    </div>
+                    <div class="switch-rg">
+                        <a class="switch" href="#">выбрать регион</a>
+                    </div>
+                </div>
+            </div>
+            <a class="button-login" href="#">Вход</a>
+        </header>
+        <main>
+            <h1 class="page-n">Контакты</h1>
+            <p class="loca-p">Наш офис находится в городе <span>Калининград, ул. Площадь Маршала Василевского, 2</span></p>
+            <section class="contact">
+                <div class="info">
+                    <div>
+                        <div style="display: flex;">
+                            <i class="msf">call</i>
+                            <p class="cont">+7 999 999 99 99</p>
+                        </div>
+                        <p class="time">Пн - Пт 7:00 - 17:00 (МСК)</p>
+                    </div>
+                    <p class="cont" style="margin-top: 24px;"><i class="msf">comment</i>@tendercase</p></p>
+                    <a class="btn-contant" href="#question-popup">Задать вопрос</a>
+                    <div id="question-popup" class="mfp-hide">
+                        <div class="post-quest">
+                            <form>
+                                <div class="heads">
+                                    <h3>Задать вопрос</h3>
+                                    <a href="#" class="popup-close"><img src="images/svg/close.svg" alt="Закрыть"></a>
+                                </div>
+                                <input type="text" placeholder="Имя" class="input-lg">
+                                <input type="text" placeholder="Номер телефона" class="input-lg">
+                                <textarea placeholder="Текст сообщения" class="input-lg text-q"></textarea>
+                                <div class="btn-forms">
+                                    <button>Отправить</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="map">
+                    
+                </div>
+            </section>
+            <section class="social">
+                <p>Присоединяйтесь к нам, чтобы получать свежие предложения:</p>
+                <div class="social-link soc">
+                    <a href="#"><img src="images/svg/vk.svg"></a>
+                    <a href="#"><img src="images/svg/ok.svg"></a>
+                    <a href="#"><img src="images/svg/telegram.svg"></a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-block">
+                <div class="block-info">
+                    <div class="more-link">
+                        <a href="#">Обучение</a>
+                        <a href="#" style="margin-top: 4px;">Поиск лотов</a>
+                        <a href="#" style="margin-top: 4px;">Услуги</a>
+                        <a href="#" style="margin-top: 4px;">О компании</a>
+                        <a href="#" style="margin-top: 4px;">Контакты</a>
+                    </div>
+                    <div class="more-link">
+                        <a href="#">Политика обработки<br>персональных данных</a>
+                        <a href="#" style="margin-top: 4px;">Договор оферты</a>
+                        <a href="#" style="margin-top: 4px;">Реквизиты</a>
+                    </div>
+                </div>
+                <div class="social-addres-link">
+                    <div class="social-link">
+                        <a href="#"><img src="images/svg/vk.svg"></a>
+                        <a href="#"><img src="images/svg/ok.svg"></a>
+                        <a href="#"><img src="images/svg/telegram.svg"></a>
+                    </div>
+                    <div class="addres-number">
+                        <a class="phone-footer" href="tel:+79999999999">+7 999 999 99 99</a>
+                        <p class="addres-footer">г.Калининград, ул. Площадь Маршала Василевского, 2</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

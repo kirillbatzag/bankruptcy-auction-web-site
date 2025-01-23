@@ -1,0 +1,38 @@
+@media (max-width: 940px) {
+  .info-block {
+    display: none;
+  }
+
+  .btn-top {
+    display: none;
+  }
+
+  .info-inf {
+    display: none;
+  }
+
+  .trening-block {
+    display: none;
+  }
+
+  picture {
+    width: 330px;
+    height: 330px;
+  }
+
+  .main-info h1 {
+    font-size: 16px;
+    line-height: 18.75px;
+  }
+
+  .photo-block p {
+    font-size: 8px;
+  }
+
+  .name-tm {
+    display: block;
+  }
+  .name-pc {
+    display: none;
+  }
+}

@@ -1,0 +1,277 @@
+@media (max-width: 940px) {
+  .info-card {
+    flex-direction: column;
+  }
+
+  .training-profession {
+    width: 100%;
+    margin: 0px;
+    height: 215px;
+    background-image: url("../images/svg/student-m.svg");
+  }
+
+  .training-profession h2 {
+    font-size: 14px;
+  }
+
+  .training-profession p {
+    font-size: 10px;
+  }
+
+  .training-info {
+    margin-top: 12px;
+    margin-left: 12px;
+  }
+
+  .training-info ul {
+    margin-top: 12px;
+    margin-bottom: 20px;
+  }
+
+  .trening-ul li {
+    font-size: 10px;
+    line-height: 12.1px;
+    margin-bottom: 0px;
+    margin-top: 2px;
+  }
+
+  .bargaining-info {
+    margin-top: 12px;
+    margin-left: 12px;
+  }
+
+  .help-bargaining {
+    margin-top: 11px;
+    width: 100%;
+    height: 186px;
+  }
+
+  .help-bargaining h2 {
+    font-size: 14px;
+  }
+
+  .help-bargaining p {
+    font-size: 10px;
+  }
+
+  .bargaining-info ul {
+    margin-top: 12px;
+    margin-bottom: 18px;
+  }
+
+  .info-help-param {
+    margin-top: 49px;
+  }
+
+  .info-help-param h1 {
+    font-size: 16px;
+    font-weight: 700;
+    height: fit-content;
+  }
+
+  .search-param-btn {
+    display: none;
+  }
+
+  .linked-more-card {
+    display: none;
+  }
+
+  .find-param {
+    display: flex;
+    padding: 10px 80px 10px 80px;
+    margin-top: 5px;
+    border: 1px solid #232323;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #232323;
+  }
+
+  .find-param:hover {
+    border: 1px solid #f1d62b;
+    transition: all 0.2s linear 0s;
+    color: #f1d62b;
+  }
+
+  .about h2 {
+    font-size: 16px;
+    line-height: 18.75px;
+  }
+
+  .about p {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+
+  .about-text {
+    display: none;
+  }
+
+  .a-t-m {
+    margin-top: 15px;
+    margin-bottom: 11px;
+    display: flex;
+  }
+
+  .about-me img {
+    width: 69px;
+    height: 69px;
+  }
+
+  .ait {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ait p {
+    margin-top: 29px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 16px;
+  }
+
+  .link-help-p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 16px;
+    color: #232323;
+  }
+
+  article.offers {
+    margin-top: 49px;
+  }
+
+  .offers-heading {
+    font-size: 16px;
+    line-height: 18.75px;
+  }
+
+  article.offers .items {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start; /* Располагаем карточки слева направо */
+    flex-wrap: nowrap; /* Запрещаем перенос строк */
+    gap: 20px; /* Пробел между карточками */
+    overflow-x: auto; /* Включаем горизонтальную прокрутку */
+    padding-bottom: 10px; /* Отступ для улучшения вида скролла */
+    scroll-snap-type: x mandatory; /* Включаем привязку скролла */
+  }
+
+  article.offers .items .item {
+    flex: 0 0 auto; /* Предотвращаем сжатие/растяжение карточек */
+    width: 300px; /* Фиксируем ширину карточек */
+    scroll-snap-align: start; /* Карточки фиксируются в начале при скролле */
+    position: relative;
+    box-sizing: border-box; /* Учитываем внутренние отступы */
+  }
+
+  .wrapper-mobile {
+    display: block;
+  }
+
+  .wv {
+    display: none;
+  }
+
+  article.offers .items {
+    gap: 12px;
+  }
+  article.offers .items .item.bg-3 {
+    background: url("../images/ramka-start2-m.webp") no-repeat center center;
+    height: 290px;
+    width: 252px;
+  }
+
+  article.offers .items .item .name-plash {
+    position: absolute;
+    top: 7px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6px;
+    color: rgba(35, 35, 35, 0.5);
+    font-size: 8px;
+    font-weight: 700;
+  }
+
+  article.offers .items .item .name-plash i.msf {
+    color: #f1d62b;
+    font-size: 17px;
+  }
+
+  article.offers .items .item .title {
+    position: relative;
+    top: 44px;
+    right: 10px;
+    padding: 0 20px;
+    color: #232323;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.41px;
+  }
+
+  article.offers .items .item ul {
+    position: relative;
+    top: 52px;
+    margin-left: 10px;
+  }
+
+  article.offers .items .item ul li {
+    color: #232323;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12.1px;
+    margin-bottom: 4px;
+  }
+
+  article.offers .items .item .now {
+    width: 100%;
+    text-align: right;
+    color: #232323;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35.16px;
+  }
+
+  article.offers .items .item .now span {
+    font-size: 39.95px;
+    line-height: 46.82px;
+  }
+
+  article.offers .items .item a.button {
+    width: 228px;
+    margin: 0 20px;
+    display: block;
+    text-decoration: none;
+    position: absolute;
+    bottom: 12px;
+    background: #f1d62b;
+    color: #232323;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 10.5px 0;
+    text-align: center;
+    border: 1px solid #232323;
+    border-radius: 6px;
+    right: -10px;
+  }
+
+  article.offers .items .item .price {
+    position: absolute;
+    bottom: 54px;
+    width: 100%;
+    padding: 0 20px;
+    left: 12px;
+  }
+
+  .about {
+    margin-top: 49px;
+  }
+}

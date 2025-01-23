@@ -1,0 +1,954 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.main-content {
+  margin: 19px auto 0;
+  display: table;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-card {
+  display: flex;
+  margin-top: 40px;
+}
+
+.training-profession {
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 590px;
+  height: 262px;
+  background-image: url("../images/svg/student.svg");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  padding-right: 10px;
+  border: 1px solid rgba(35, 35, 35, 0.8);
+  border-radius: 10px;
+}
+
+.training-info {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.training-info h2,
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+.training-info h2 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.training-info p {
+  margin-top: 4px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.training-info ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.training-info li {
+  margin-top: 4px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  position: relative;
+  padding-left: 8px;
+}
+
+.training-get-info {
+  margin-top: 19px;
+  font-family: "Roboto", sans-serif;
+  color: rgba(35, 35, 35, 1);
+  padding: 11px 20px 11px 20px;
+  background: #f1d62b;
+  border: solid #232323 1px;
+  font-size: 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  width: 103px;
+}
+
+.training-get-info:hover {
+  background: #ffffff;
+  transition: all 0.2s linear 0s;
+}
+
+.help-bargaining {
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  height: 262px;
+  border: 1px solid rgba(35, 35, 35, 0.8);
+  border-radius: 10px;
+}
+
+.bargaining-info {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.bargaining-info h2,
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+.help-bargaining h2 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.help-bargaining p {
+  margin-top: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  opacity: 50%;
+}
+
+.bargaining-info ul {
+  margin-top: 20px;
+  margin-bottom: 25px;
+  opacity: 50%;
+}
+.bargaining-info-btn {
+  width: 103px;
+  height: 36px;
+  font-family: "Roboto", sans-serif;
+  color: rgba(35, 35, 35, 1);
+  padding: 11px 20px 11px 20px;
+  border: solid #232323 1px;
+  font-size: 12px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.bargaining-info-btn:hover {
+  border: 1px solid #f1d62b;
+  transition: all 0.2s linear 0s;
+  color: #f1d62b;
+}
+
+.info-help-param {
+  margin-top: 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.info-help-param h1 {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+
+.info-help-param a {
+  margin-top: 19px;
+  font-family: "Roboto", sans-serif;
+  color: rgba(35, 35, 35, 1);
+  padding: 11px 20px 11px 20px;
+  border: solid #232323 1px;
+  font-weight: 400;
+  font-size: 14px;
+  border-radius: 6px;
+  padding: 10px 37px 10px 37px;
+  text-decoration: none;
+  background-color: #f1d62b;
+}
+
+.info-help-param a:hover {
+  background: #ffffff;
+  transition: all 0.2s linear 0s;
+}
+
+.announcement {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.announcement-m {
+  display: none;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.linked-more-card {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 24px;
+}
+
+.watching-more-card {
+  color: rgba(35, 35, 35, 1);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  opacity: 50%;
+}
+
+.watching-more-card:hover {
+  opacity: 100%;
+}
+
+.about {
+  margin-top: 62px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about p {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  line-height: 24px;
+}
+
+.about h2 {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  line-height: 46.88px;
+}
+
+.about-me {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about-me p {
+  margin-top: 29px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.about-me2-text {
+  margin-top: 17px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.about-me3-text {
+  margin-top: 17px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.ecp {
+  margin-top: 46px;
+  margin-left: 46px;
+}
+
+.documents {
+  margin-top: 44px;
+  margin-left: 138px;
+}
+
+.torgi {
+  margin-top: 32px;
+  margin-left: 152px;
+}
+
+.info-add-about {
+  margin-top: 32px;
+  display: flex;
+}
+
+.info-help-about {
+  font-family: "Robot", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.link-help-p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #232323;
+}
+
+.offers {
+  margin-top: 110px;
+}
+
+.offers-heading {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46.88px;
+  color: #232323;
+}
+
+.offers-main {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.trening-ul li {
+  display: flex;
+  align-items: center;
+  padding-left: 0px;
+  font-family: "Intern", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15.52px;
+  margin-bottom: 4px;
+}
+
+.span-li-circle {
+  display: flex;
+  margin-top: 4.5px;
+  margin-bottom: 4.5px;
+  width: 6px;
+  height: 6px;
+  background-color: #232323;
+  margin-right: 4.5px;
+  border-radius: 360px;
+}
+
+.offers-card1 {
+  background-image: url("../images/ramka-star1.webp");
+  width: 300px;
+  height: 380px;
+}
+
+.new-star {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin-top: 6px;
+  height: 29px;
+}
+
+.stars {
+  width: 23px;
+  height: 23px;
+  margin-right: 6px;
+}
+
+.stars i {
+  color: #f1d62b;
+}
+
+.new-star img {
+  width: 23px;
+  height: 23px;
+}
+
+.new-p {
+  display: flex;
+  align-items: center;
+  font-family: "Intern", sans-serif;
+  font-weight: 700;
+  font-size: 8px;
+  line-height: 9.68px;
+  margin-right: 16px;
+  opacity: 50%;
+}
+
+.discount-info1 {
+  margin-top: 21px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.discount-info1 h2 {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21.09px;
+  height: 31px;
+}
+
+.price-discount-info1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.old-price1 {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 24.2px;
+  text-decoration: line-through;
+  color: rgba(186, 0, 0, 1);
+  opacity: 50%;
+}
+
+.new-price1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 39.95px;
+  line-height: 46.82px;
+  color: #232323;
+}
+
+.premier-price {
+  display: flex;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.52px;
+  color: rgba(35, 35, 35, 0.7);
+  margin-top: 22px;
+  background-color: rgba(241, 214, 43, 0.35);
+  border: 1px solid rgba(35, 35, 35, 1);
+  border-radius: 6px;
+  padding: 10.5px 78.5px;
+  cursor: default;
+}
+
+.offers-card2 {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 350px;
+  border: 1px solid rgba(35, 35, 35, 0.8);
+  border-radius: 12px;
+}
+
+.discount-info2 {
+  margin-top: 27px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.discount-info2 h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21.09px;
+  height: 31px;
+}
+
+.discount-info2 li {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.52px;
+}
+
+.price-discount-info2 {
+  display: flex;
+  margin-right: 16px;
+  margin-top: 66px;
+  justify-content: flex-end;
+}
+
+.price1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 39.95px;
+  line-height: 46.82px;
+}
+
+.buy-offer-one {
+  margin-top: 22px;
+  display: flex;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.52px;
+  color: rgba(35, 35, 35);
+  text-decoration: none;
+  justify-content: center;
+  padding: 10.5px 102px;
+  align-items: center;
+  background-color: rgba(241, 214, 43);
+  border-radius: 6px;
+  border: 1px solid rgba(35, 35, 35, 1);
+  border-radius: 6px;
+}
+.buy-offer-one:hover {
+  background-color: #ffffff;
+  transition: all 0.2s linear 0s;
+}
+#buy-btn-offer {
+  background-color: rgba(241, 214, 43);
+}
+
+.info-prof-price {
+  display: flex;
+  border: 1px solid rgba(35, 35, 35, 0.8);
+  width: 940px;
+  height: 142px;
+  border-radius: 12px;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.btn-link-buy-course {
+  display: flex;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.52px;
+  color: rgba(35, 35, 35);
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  border: 1px solid rgba(35, 35, 35, 1);
+  background: rgba(241, 214, 43, 1);
+  border-radius: 6px;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  padding: 10.5px 62.5px;
+}
+
+.btn-link-buy-course:hover {
+  background: #ffffff;
+  transition: all 0.2s linear 0s;
+}
+
+.info-prof {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.info-price-buy {
+  margin-right: 20px;
+}
+
+.prof-info {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21.09px;
+}
+
+.point-info {
+  align-items: center;
+  padding-left: 0px;
+  font-family: "Intern", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.52px;
+}
+
+.offers-card3 {
+  background-image: url("../images/ramka-start2.webp");
+  width: 300px;
+  height: 380px;
+}
+
+#prof-ul {
+  margin-top: 10px;
+}
+
+.info-price-buy {
+  margin-top: 12px;
+}
+.prof-price {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28.13px;
+}
+
+.big-price {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 58.59px;
+}
+
+.block-info {
+  display: flex;
+  gap: 102px;
+}
+.login-popup {
+  display: none;
+  flex-direction: column;
+  width: 300px;
+  height: 164px;
+  border: 1px solid rgba(241, 214, 43, 1);
+  border-radius: 6px;
+}
+
+.content-login {
+  display: flex;
+  flex-direction: column;
+  margin: 12px 12px 0px 12px;
+}
+
+.info-login {
+  display: flex;
+}
+
+.pop-text-login {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.41px;
+  color: rgba(35, 35, 35, 1);
+  margin-right: 98px;
+}
+
+.info-login a {
+  width: 24px;
+  height: 24px;
+}
+
+.input-lg {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 24px;
+  border: 1px solid rgba(81, 81, 81, 1);
+  border-radius: 6px;
+  padding-left: 6px;
+}
+
+.bts-lg {
+  display: flex;
+  margin-top: 8px;
+}
+
+.btn-lg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 24px;
+  border: 1px solid rgba(35, 35, 35, 1);
+  background-color: rgba(241, 214, 43, 1);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 11.72px;
+  border-radius: 6px;
+  margin-right: 8px;
+}
+
+.btn-reg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 112px;
+  height: 24px;
+  border: 1px solid rgba(35, 35, 35, 1);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 11.72px;
+  border-radius: 6px;
+}
+
+.link-restore {
+  margin-top: 8px;
+  color: rgba(35, 35, 35, 0.5);
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  line-height: 11.72px;
+}
+
+.icon-link {
+  text-decoration: none;
+  color: #232323;
+  opacity: 50%;
+}
+
+.icon-link:hover {
+  opacity: 100%;
+  transition: all 0.2s linear 0s;
+}
+
+.dis1 {
+  height: 52px;
+}
+
+.social-link a:hover {
+  opacity: 50%;
+  transition: all 0.2s linear 0s;
+}
+
+.about-text {
+  margin-top: 30px;
+  margin-bottom: 32px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+}
+
+.long-h2 {
+  height: 52px;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21.09px;
+  margin-bottom: 20px;
+}
+
+.not-star {
+  margin-top: 5px;
+}
+
+.wrapper {
+  max-width: 940px;
+  width: 100%;
+  margin: 0 auto;
+  display: table;
+}
+
+article.offers {
+  margin-top: 110px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+article.offers .items {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+article.offers .items .item {
+  width: 300px;
+  position: relative;
+}
+
+article.offers .items .item.bg-1 {
+  background: url("../images/ramka-star1.webp") no-repeat center center;
+  height: 380px;
+}
+
+article.offers .items .item .name-plash {
+  position: absolute;
+  top: 6px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+  color: rgba(35, 35, 35, 0.5);
+  font-size: 8px;
+  font-weight: 700;
+}
+
+article.offers .items .item .name-plash i.msf {
+  color: #f1d62b;
+  font-size: 23px;
+}
+
+article.offers .items .item .title {
+  position: relative;
+  top: 50px;
+  padding: 0 20px;
+  color: #232323;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+article.offers .items .item ul {
+  position: relative;
+  top: 73px;
+  margin-left: 20px;
+}
+
+article.offers .items .item ul li {
+  color: #232323;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.52px;
+  margin-bottom: 4px;
+}
+
+article.offers .items .item ul li:last-child {
+  margin-bottom: 0px;
+}
+
+article.offers .items .item .price {
+  position: absolute;
+  bottom: 75px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+article.offers .items .item .price .old {
+  width: 100%;
+  text-align: right;
+  color: #ba0000;
+  font-size: 20px;
+  font-weight: 700;
+  opacity: 0.5;
+  display: block;
+}
+
+article.offers .items .item .now {
+  width: 100%;
+  text-align: right;
+  color: #232323;
+  font-size: 39.95px;
+  font-weight: 700;
+}
+
+article.offers .items .item .now span {
+  font-size: 50px;
+}
+
+article.offers .items .item a.button {
+  width: 260px;
+  margin: 0 20px;
+  display: block;
+  text-decoration: none;
+  position: absolute;
+  bottom: 20px;
+  background: #f1d62b;
+  color: #232323;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 10.5px 0;
+  text-align: center;
+  border: 1px solid #232323;
+  border-radius: 6px;
+}
+
+article.offers .items .item a.button:hover {
+  background: #ffffff;
+  transition: all 0.2s linear 0s;
+}
+
+article.offers .items .item a.button.hidden {
+  opacity: 0.5;
+  cursor: default;
+  pointer-events: none;
+}
+
+article.offers .items .item.bg-2 {
+  height: 350px;
+  border: 1px solid rgba(35, 35, 35, 0.8);
+  border-radius: 12px;
+}
+
+article.offers .items .item.bg-2 .name-plash {
+  display: none;
+}
+
+article.offers .items .item.bg-2 .title {
+  position: unset;
+  margin-top: 20px;
+}
+
+article.offers .items .item.bg-2 ul {
+  position: unset;
+  margin-top: 10px;
+}
+
+article.offers .items .item.bg-3 {
+  background: url("../images/ramka-start2.webp") no-repeat center center;
+  height: 380px;
+}
+
+article.offers .items .item.bg-4 {
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(35, 35, 35, 0.8);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+article.offers .items .item.bg-4 * {
+  position: unset !important;
+}
+
+article.offers .items .item.bg-4 .name-plash {
+  display: none;
+}
+
+article.offers .items .item.bg-4 .title {
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+article.offers .items .item.bg-4 ul {
+  margin: 0 20px;
+}
+
+article.offers .items .item.bg-4 .price {
+  margin-bottom: 15px;
+  padding: 0;
+}
+
+article.offers .items .item.bg-4 a.button {
+  margin: 0;
+}
+
+article.offers ul {
+  list-style: none;
+}
+
+article.offers li {
+  display: flex;
+  align-items: center;
+  padding-left: 0px;
+  font-family: "Intern", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15.52px;
+  margin-bottom: 4px;
+}
+
+.a-t-m {
+  display: none;
+}
+
+.big-p {
+  font-weight: bold;
+}
+
+.wrapper-mobile {
+  display: none;
+}
