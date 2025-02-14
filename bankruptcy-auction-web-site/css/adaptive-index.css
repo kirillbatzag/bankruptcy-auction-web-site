@@ -7,6 +7,7 @@
     width: 100%;
     margin: 0px;
     height: 215px;
+    background-image: url("../images/svg/student-m.svg");
   }
 
   .training-profession h2 {
@@ -77,9 +78,9 @@
   }
 
   .find-param {
-    display: block;
-    margin-top: 15px;
-    padding: 10px 92px;
+    display: flex;
+    padding: 10px 80px 10px 80px;
+    margin-top: 5px;
     border: 1px solid #232323;
     border-radius: 6px;
     text-decoration: none;
@@ -172,14 +173,62 @@
 
   .wrapper-mobile {
     display: block;
+    overflow-x: auto;
   }
 
   .wv {
-    display: none;
+    overflow-x: auto;
+    display: block;
+  }
+
+  /* Карточки мини */
+  .item {
+    width: 252px !important;
+    height: 290px !important;
+    border-radius: 12px !important;
+  }
+  .item.bg-1 {
+    background: none !important;
+    border: solid 1px black;
+  }
+  .item.bg-2 {
+    background: none !important;
+    border: solid 1px black;
+  }
+  .item.bg-4 {
+    background: none !important;
+    border: solid 1px black;
+    display: block !important;
+    padding: 0px !important;
+  }
+  article.offers .items .item.bg-4 .title {
+    margin-top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  article.offers .items .item.bg-4 ul {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: 0px;
+    height: 116px;
+  }
+  article.offers .items .item .now {
+    margin-top: 0px;
+  }
+  article.offers .items .item.bg-4 a.button {
+    margin: 0 11px;
   }
 
   article.offers .items {
-    gap: 12px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scroll-snap-type: x mandatory;
   }
   article.offers .items .item.bg-3 {
     background: url("../images/ramka-start2-m.webp") no-repeat center center;
@@ -268,5 +317,9 @@
     width: 100%;
     padding: 0 20px;
     left: 12px;
+  }
+
+  .about {
+    margin-top: 49px;
   }
 }

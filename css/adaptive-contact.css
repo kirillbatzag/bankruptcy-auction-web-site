@@ -1,0 +1,17 @@
+@media (max-width: 940px) {
+  .contact {
+    flex-direction: column;
+  }
+  .map {
+    order: 1;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .info {
+    order: 2;
+  }
+  .btn-contant {
+    width: 100%;
+    text-align: center;
+  }
+}

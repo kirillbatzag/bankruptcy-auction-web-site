@@ -1,0 +1,18 @@
+@media (max-width: 940px) {
+  .content-profile {
+    flex-direction: column;
+    align-items: normal;
+  }
+  .buttons {
+    justify-content: center;
+  }
+  .date-user {
+    margin: 0 20px;
+    margin-top: 20px;
+  }
+  .nameP {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

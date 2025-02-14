@@ -10,6 +10,7 @@
 body {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .main-content {
@@ -322,7 +323,6 @@ aside {
 footer {
   margin-top: 110px;
   width: 100%;
-  height: 100px;
 }
 
 .footer-block {
@@ -399,7 +399,7 @@ footer {
 .lot-view {
   margin-top: 12px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 20px;
 }
 

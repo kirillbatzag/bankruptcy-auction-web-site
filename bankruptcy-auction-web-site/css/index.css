@@ -15,7 +15,6 @@ body {
 .main-content {
   margin: 19px auto 0;
   display: table;
-  overflow: hidden;
 }
 
 main {

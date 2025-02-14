@@ -1,119 +1,121 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-body{
-    display: flex;
-    justify-content: center;
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.main-content{
-    margin: 19px auto 0;
-    display: table;
+.main-content {
+  margin: 19px auto 0;
+  display: table;
 }
 
-.content-profile{
-    margin-top: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.content-profile {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.content-profile .nameP h1{
-    font-weight: 700;
-    font-size: 40px;
-    color: #232323;
-    line-height: 46.88px;
+.content-profile .nameP h1 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #232323;
+  line-height: 46.88px;
 }
 
-.content-profile .nameP p{
-    display: flex;
-    align-items: center;
-    font-weight: 700;
-    font-size: 20px;
-    color: #232323;
-    line-height: 24.2px;
+.content-profile .nameP p {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 20px;
+  color: #232323;
+  line-height: 24.2px;
 }
 
-.content-profile .nameP a{
-    margin-left: 7px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    color: #232323;
+.content-profile .nameP a {
+  margin-left: 7px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #232323;
 }
 
-.date-user{
-    text-align: center;
-    padding: 10px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16.94px;
-    border: #232323 1px solid;
-    border-radius: 7px;
-    height: fit-content;
+.date-user {
+  text-align: center;
+  padding: 10px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16.94px;
+  border: #232323 1px solid;
+  border-radius: 7px;
+  height: fit-content;
 }
 
-.buttons{
-    display: flex;
-    margin-top: 24px;
-    gap: 14px;
+.buttons {
+  display: flex;
+  margin-top: 24px;
+  gap: 14px;
 }
 
-.buttons .btn{
-    display: flex;
-    text-align: center;
-    border: 1px solid #232323;
-    border-radius: 6px;
-    padding: 6px 20px;
-    font-weight: 400;
-    font-size: 12px;
-    color: #232323;
-    text-decoration: none;
-    align-items: center;
-    justify-content: space-between;
+.buttons .btn {
+  display: flex;
+  text-align: center;
+  border: 1px solid #232323;
+  border-radius: 6px;
+  padding: 6px 20px;
+  font-weight: 400;
+  font-size: 12px;
+  color: #232323;
+  text-decoration: none;
+  align-items: center;
+  justify-content: space-between;
 }
 .buttons .btn-fav {
-    background-color: #F1D62B;
+  background-color: #f1d62b;
 }
 
-.btn-fav:hover{
-    background-color: #FFFFFF;
-    transition: all 0.2s linear 0s;
+.btn-fav:hover {
+  background-color: #ffffff;
+  transition: all 0.2s linear 0s;
 }
 
-.btn-mon:hover{
-    border: 1px solid #F1D62B;
-    transition: all 0.2s linear 0s;
-    color: #F1D62B;
+.btn-mon:hover {
+  border: 1px solid #f1d62b;
+  transition: all 0.2s linear 0s;
+  color: #f1d62b;
 }
 
-.buttons .btn-fav i{
-    margin-right: 10px;
+.buttons .btn-fav i {
+  margin-right: 10px;
 }
 
-.buttons .btn-mon i{
-    margin-right: 6px;
+.buttons .btn-mon i {
+  margin-right: 6px;
 }
 
-.lot-p{
-    display: flex;
-    margin-top: 30px;
-    gap: 20px;
+.lot-p {
+  display: flex;
+  margin-top: 30px;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
-.icon-links-data a{
-    color: #232323;
-    opacity: 50%;
+.icon-links-data a {
+  color: #232323;
+  opacity: 50%;
 }
 
-.icon-links-data a:hover{
-    opacity: 100%;
+.icon-links-data a:hover {
+  opacity: 100%;
 }

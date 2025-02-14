@@ -6,6 +6,7 @@
   }
   .name-page {
     font-size: 16px;
+    margin-top: 0px;
   }
   .search-box {
     margin-top: 0px;
@@ -26,7 +27,13 @@
     width: 100%;
   }
   .slider-track {
-    width: 305px;
+    width: 285px;
+  }
+  .field input {
+    width: 100%;
+  }
+  .separator {
+    margin: 4px;
   }
   .vpc {
     display: none;
@@ -40,9 +47,6 @@
   .result-search {
     margin-left: 0px;
     margin-top: 16px;
-  }
-  .lot-view {
-    display: none;
   }
   .lot-viewM {
     display: flex;
@@ -63,5 +67,10 @@
     border: #f1d62b solid 1px;
     height: fit-content;
     padding: 4px;
+    color: #232323;
+  }
+
+  .result-setting {
+    display: none;
   }
 }

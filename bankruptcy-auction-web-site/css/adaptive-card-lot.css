@@ -35,4 +35,76 @@
   .name-pc {
     display: none;
   }
+  .info-slot {
+    flex-direction: column;
+  }
+  .info-block {
+    display: block;
+  }
+  .ac {
+    font-size: 12px;
+    margin-left: 20px;
+  }
+  .ryad {
+    flex-wrap: wrap;
+  }
+  .status {
+    position: relative;
+    margin: 0px;
+  }
+  .gps-slot {
+    margin-top: 10px;
+  }
+  .info-data {
+    align-items: baseline;
+    margin-top: 30px;
+  }
+  .info-block .ryad .info-price a {
+    font-size: 12px;
+  }
+  .ryad .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  .info-block .ryad {
+    display: block;
+  }
+  .r-link {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  .btn-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .info-inf {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .info-text {
+    justify-content: space-between;
+  }
+  .info-text .name-info {
+    width: fit-content;
+  }
+  .trening-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 95px;
+    background-image: none;
+  }
+  .get-more-info {
+    margin: 10px;
+  }
+  .trening-block h2 {
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 20px;
+  }
 }

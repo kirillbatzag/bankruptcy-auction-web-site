@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="css/slider.css" />
     <link rel="stylesheet" href="css/adaptive.css" />
     <link rel="stylesheet" href="css/adaptive-search.css" />
+    <link rel="stylesheet" href="css/popup.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Главная</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script type="text/javascript" src="js/icons.js"></script>
+    <script type="text/javascript" src="js/magnific.js"></script>
   </head>
   <body>
     <div class="main-content">
@@ -37,6 +40,18 @@
           <a class="nav_item" href="#">о компании</a>
           <a class="nav_item" href="#">контакты</a>
           <a class="nav_item" href="#">новости</a>
+          <a class="menu">
+            <hr />
+            <hr />
+            <hr />
+          </a>
+          <div class="m-menu">
+            <a href="#">Обучение</a>
+            <a href="#">Услуги</a>
+            <a href="#">О компании</a>
+            <a href="#">Контакты</a>
+            <a href="#">Вход</a>
+          </div>
         </nav>
         <div class="location">
           <i class="msf">location_on</i>
@@ -50,20 +65,19 @@
           </div>
         </div>
         <a class="button-login" href="#">Вход</a>
-        <a class="menu"><i class="msf">menu</i></a>
       </header>
       <main>
         <h1 class="name-page">Поиск лотов</h1>
         <div class="ss">
-            <div class="search-box">
+          <div class="search-box">
             <img src="images/svg/search.svg" />
             <input
-                class="text-search"
-                type="text"
-                placeholder="введите название, номер лота, кадастровый номер"
+              class="text-search"
+              type="text"
+              placeholder="введите название, номер лота, кадастровый номер"
             />
-            </div>
-            <a class="setting-a" href="#"><i class="msf">tune</i></a>
+          </div>
+          <a class="setting-a" href="#"><i class="msf">tune</i></a>
         </div>
         <div class="seting-search">
           <div class="result-setting">
@@ -94,43 +108,6 @@
                   <div class="check-type">
                     <input type="checkbox" name="more" id="more" />
                     <label for="more">прочее</label>
-                  </div>
-                </form>
-              </div>
-              <div class="content-aside-category">
-                <form class="category">
-                  <h3>Категории</h3>
-                  <div class="check-type" id="first-check">
-                    <input type="checkbox" name="tech" id="tech" />
-                    <label for="tech">транспорт, техника</label>
-                  </div>
-                  <div class="check-type">
-                    <input type="checkbox" name="estate" id="estate" />
-                    <label for="estate">недвижимость</label>
-                  </div>
-                  <div class="check-type">
-                    <input
-                      type="checkbox"
-                      name="earth-ycha1"
-                      id="earth-ycha1"
-                    />
-                    <label for="earth-ycha1">земельные участки</label>
-                  </div>
-                  <div class="check-type">
-                    <input type="checkbox" name="doly1" id="doly1" />
-                    <label for="doly1">акции и доли</label>
-                  </div>
-                  <div class="check-type">
-                    <input
-                      type="checkbox"
-                      name="big-papper1"
-                      id="big-papper1"
-                    />
-                    <label for="big-papper1">ценные бумаги</label>
-                  </div>
-                  <div class="check-type">
-                    <input type="checkbox" name="more1" id="more1" />
-                    <label for="more1">прочее</label>
                   </div>
                 </form>
               </div>
@@ -175,6 +152,44 @@
                   </div>
                 </form>
               </div>
+              <div class="content-aside-category">
+                <form class="category">
+                  <h3>Категории</h3>
+                  <div class="check-type" id="first-check">
+                    <input type="checkbox" name="tech" id="tech" />
+                    <label for="tech">транспорт, техника</label>
+                  </div>
+                  <div class="check-type">
+                    <input type="checkbox" name="estate" id="estate" />
+                    <label for="estate">недвижимость</label>
+                  </div>
+                  <div class="check-type">
+                    <input
+                      type="checkbox"
+                      name="earth-ycha1"
+                      id="earth-ycha1"
+                    />
+                    <label for="earth-ycha1">земельные участки</label>
+                  </div>
+                  <div class="check-type">
+                    <input type="checkbox" name="doly1" id="doly1" />
+                    <label for="doly1">акции и доли</label>
+                  </div>
+                  <div class="check-type">
+                    <input
+                      type="checkbox"
+                      name="big-papper1"
+                      id="big-papper1"
+                    />
+                    <label for="big-papper1">ценные бумаги</label>
+                  </div>
+                  <div class="check-type">
+                    <input type="checkbox" name="more1" id="more1" />
+                    <label for="more1">прочее</label>
+                  </div>
+                </form>
+              </div>
+
               <div class="save-settings vpc">
                 <h3>Сохраненный поиск</h3>
                 <img src="images/svg/vector.svg" />
@@ -198,439 +213,28 @@
           <div class="result-search">
             <h2 class="name-content">Результаты поиска:</h2>
             <p class="result-count">найдено 133 лота</p>
-            <div class="lot-view">
-              <div class="lot-result">
-                <div class="card-sell">
-                  <div class="top-card">
-                    <a href="#"><img src="images/image1.png" /></a>
-                    <a href="#" class="fav_ads"><i class="mso">favorite</i></a>
-                    <img
-                      class="svg-logo-card"
-                      alt="Лого для карточки"
-                      src="images/svg/logo-card.svg"
-                    />
-                    <div class="status">
-                      <img src="images/svg/commynity.svg" />
-                      <p>публичное предложение</p>
-                    </div>
-                  </div>
-                  <div class="bottom-card">
-                    <a href="#" class="link-tc"
-                      ><h3>
-                        Право заключения договора<br />аренды земельного участка
-                        с<br />кадастровым номером 39:05:050...
-                      </h3></a
-                    >
-                    <div class="data-card">
-                      <div class="start-price">
-                        <p>Начальная цена:</p>
-                        <a href="#" class="link-tc"><h4>590 000,00 руб.</h4></a>
-                      </div>
-                      <div class="reception">
-                        <p>Прием заявок до:</p>
-                        <a href="#" class="link-tc"><h4>25.05.2024 г.</h4></a>
-                      </div>
-                    </div>
-                    <div class="more-data-card">
-                      <div class="icon-links-data">
-                        <a href="#" class="icon-link"
-                          ><i class="msf">desktop_windows</i></a
-                        >
-                        <a href="#" class="icon-link"
-                          ><i class="msf">delete</i></a
-                        >
-                      </div>
-                      <a class="btn-atp-link" href="#">ЭТП</a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card-sell">
-                  <div class="top-card">
-                    <a href="#"><img src="images/i2.png" /></a>
-                    <a href="#" class="fav_ads"><i class="mso">favorite</i></a>
-                    <img
-                      class="svg-logo-card"
-                      alt="Лого для карточки"
-                      src="images/svg/logo-card.svg"
-                    />
-                    <div class="status">
-                      <img src="images/svg/аuction.svg" />
-                      <p>аукцион</p>
-                    </div>
-                  </div>
-                  <div class="bottom-card">
-                    <a href="#" class="link-tc"
-                      ><h3>
-                        Нежилые помещения общей<br />площадью 1665,7 кв.м.,<br />расположенные
-                        в здании, являющ
-                      </h3></a
-                    >
-                    <div class="data-card">
-                      <div class="start-price">
-                        <p>Начальная цена:</p>
-                        <a href="#" class="link-tc"><h4>590 000,00 руб.</h4></a>
-                      </div>
-                      <div class="reception">
-                        <p>Прием заявок до:</p>
-                        <a href="#" class="link-tc"><h4>25.05.2024 г.</h4></a>
-                      </div>
-                    </div>
-                    <div class="more-data-card">
-                      <div class="icon-links-data">
-                        <a href="#" class="icon-link"
-                          ><i class="msf">desktop_windows</i></a
-                        >
-                        <a href="#" class="icon-link"
-                          ><i class="msf">delete</i></a
-                        >
-                      </div>
-                      <a class="btn-atp-link" href="#">ЭТП</a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card-sell">
-                  <div class="top-card">
-                    <a href="#"><img src="images/i3.png" /></a>
-                    <a href="#" class="fav_ads"><i class="mso">favorite</i></a>
-                    <img
-                      class="svg-logo-card"
-                      alt="Лого для карточки"
-                      src="images/svg/logo-card.svg"
-                    />
-                    <div class="status">
-                      <img src="images/svg/аuction.svg" />
-                      <p>аукцион</p>
-                    </div>
-                  </div>
-                  <div class="bottom-card">
-                    <a href="#" class="link-tc"
-                      ><h3>
-                        Муниципальное имущество,<br />расположенное по
-                        адресу:<br />Российская Федерация, Калининг..
-                      </h3></a
-                    >
-                    <div class="data-card">
-                      <div class="start-price">
-                        <p>Начальная цена:</p>
-                        <a href="#" class="link-tc"><h4>590 000,00 руб.</h4></a>
-                      </div>
-                      <div class="reception">
-                        <p>Прием заявок до:</p>
-                        <a href="#" class="link-tc"><h4>25.05.2024 г.</h4></a>
-                      </div>
-                    </div>
-                    <div class="more-data-card">
-                      <div class="icon-links-data">
-                        <a href="#" class="icon-link"
-                          ><i class="msf">desktop_windows</i></a
-                        >
-                        <a href="#" class="icon-link"
-                          ><i class="msf">delete</i></a
-                        >
-                      </div>
-                      <a class="btn-atp-link" href="#">ЭТП</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="lot-result">
-                <div class="card-sell">
-                  <div class="top-card">
-                    <a href="#"><img src="images/i2.png" /></a>
-                    <a href="#" class="fav_ads"><i class="mso">favorite</i></a>
-                    <img
-                      class="svg-logo-card"
-                      alt="Лого для карточки"
-                      src="images/svg/logo-card.svg"
-                    />
-                    <div class="status">
-                      <img src="images/svg/аuction.svg" />
-                      <p>аукцион</p>
-                    </div>
-                  </div>
-                  <div class="bottom-card">
-                    <a href="#" class="link-tc"
-                      ><h3>
-                        Нежилые помещения общей<br />площадью 1665,7 кв.м.,<br />расположенные
-                        в здании, являющ
-                      </h3></a
-                    >
-                    <div class="data-card">
-                      <div class="start-price">
-                        <p>Начальная цена:</p>
-                        <a href="#" class="link-tc"><h4>590 000,00 руб.</h4></a>
-                      </div>
-                      <div class="reception">
-                        <p>Прием заявок до:</p>
-                        <a href="#" class="link-tc"><h4>25.05.2024 г.</h4></a>
-                      </div>
-                    </div>
-                    <div class="more-data-card">
-                      <div class="icon-links-data">
-                        <a href="#" class="icon-link"
-                          ><i class="msf">desktop_windows</i></a
-                        >
-                        <a href="#" class="icon-link"
-                          ><i class="msf">delete</i></a
-                        >
-                      </div>
-                      <a class="btn-atp-link" href="#">ЭТП</a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card-sell">
-                  <div class="top-card">
-                    <a href="#"><img src="images/i4.png" /></a>
-                    <a href="#" class="fav_ads"><i class="mso">favorite</i></a>
-                    <img
-                      class="svg-logo-card"
-                      alt="Лого для карточки"
-                      src="images/svg/logo-card.svg"
-                    />
-                    <div class="status">
-                      <img src="images/svg/аuction.svg" />
-                      <p>аукцион</p>
-                    </div>
-                  </div>
-                  <div class="bottom-card">
-                    <a href="#" class="link-tc"
-                      ><h3>
-                        Муниципальное имущество,<br />расположенное по
-                        адресу:<br />Российская Федерация, Калининг..
-                      </h3></a
-                    >
-                    <div class="data-card">
-                      <div class="start-price">
-                        <p>Начальная цена:</p>
-                        <a href="#" class="link-tc"><h4>590 000,00 руб.</h4></a>
-                      </div>
-                      <div class="reception">
-                        <p>Прием заявок до:</p>
-                        <a href="#" class="link-tc"><h4>25.05.2024 г.</h4></a>
-                      </div>
-                    </div>
-                    <div class="more-data-card">
-                      <div class="icon-links-data">
-                        <a href="#" class="icon-link"
-                          ><i class="msf">desktop_windows</i></a
-                        >
-                        <a href="#" class="icon-link"
-                          ><i class="msf">delete</i></a
-                        >
-                      </div>
-                      <a class="btn-atp-link" href="#">ЭТП</a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card-sell">
-                  <div class="top-card">
-                    <a href="#"><img src="images/image1.png" /></a>
-                    <a href="#" class="fav_ads"><i class="mso">favorite</i></a>
-                    <img
-                      class="svg-logo-card"
-                      alt="Лого для карточки"
-                      src="images/svg/logo-card.svg"
-                    />
-                    <div class="status">
-                      <img src="images/svg/аuction.svg" />
-                      <p>аукцион</p>
-                    </div>
-                  </div>
-                  <div class="bottom-card">
-                    <a href="#" class="link-tc"
-                      ><h3>
-                        Право заключения договора<br />аренды земельного участка
-                        с<br />кадастровым номером 39:05:050...
-                      </h3></a
-                    >
-                    <div class="data-card">
-                      <div class="start-price">
-                        <p>Начальная цена:</p>
-                        <a href="#" class="link-tc"><h4>590 000,00 руб.</h4></a>
-                      </div>
-                      <div class="reception">
-                        <p>Прием заявок до:</p>
-                        <a href="#" class="link-tc"><h4>25.05.2024 г.</h4></a>
-                      </div>
-                    </div>
-                    <div class="more-data-card">
-                      <div class="icon-links-data">
-                        <a href="#" class="icon-link"
-                          ><i class="msf">desktop_windows</i></a
-                        >
-                        <a href="#" class="icon-link"
-                          ><i class="msf">delete</i></a
-                        >
-                      </div>
-                      <a class="btn-atp-link" href="#">ЭТП</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="lot-result">
-                <div class="card-sell">
-                  <div class="top-card">
-                    <a href="#"><img src="images/i3.png" /></a>
-                    <a href="#" class="fav_ads"><i class="mso">favorite</i></a>
-                    <img
-                      class="svg-logo-card"
-                      alt="Лого для карточки"
-                      src="images/svg/logo-card.svg"
-                    />
-                    <div class="status">
-                      <img src="images/svg/аuction.svg" />
-                      <p>аукцион</p>
-                    </div>
-                  </div>
-                  <div class="bottom-card">
-                    <a href="#" class="link-tc"
-                      ><h3>
-                        Муниципальное имущество,<br />расположенное по
-                        адресу:<br />Российская Федерация, Калининг..
-                      </h3></a
-                    >
-                    <div class="data-card">
-                      <div class="start-price">
-                        <p>Начальная цена:</p>
-                        <a href="#" class="link-tc"><h4>590 000,00 руб.</h4></a>
-                      </div>
-                      <div class="reception">
-                        <p>Прием заявок до:</p>
-                        <a href="#" class="link-tc"><h4>25.05.2024 г.</h4></a>
-                      </div>
-                    </div>
-                    <div class="more-data-card">
-                      <div class="icon-links-data">
-                        <a href="#" class="icon-link"
-                          ><i class="msf">desktop_windows</i></a
-                        >
-                        <a href="#" class="icon-link"
-                          ><i class="msf">delete</i></a
-                        >
-                      </div>
-                      <a class="btn-atp-link" href="#">ЭТП</a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card-sell">
-                  <div class="top-card">
-                    <a href="#"><img src="images/image1.png" /></a>
-                    <a href="#" class="fav_ads"><i class="mso">favorite</i></a>
-                    <img
-                      class="svg-logo-card"
-                      alt="Лого для карточки"
-                      src="images/svg/logo-card.svg"
-                    />
-                    <div class="status">
-                      <img src="images/svg/аuction.svg" />
-                      <p>аукцион</p>
-                    </div>
-                  </div>
-                  <div class="bottom-card">
-                    <a href="#" class="link-tc"
-                      ><h3>
-                        Право заключения договора<br />аренды земельного участка
-                        с<br />кадастровым номером 39:05:050...
-                      </h3></a
-                    >
-                    <div class="data-card">
-                      <div class="start-price">
-                        <p>Начальная цена:</p>
-                        <a href="#" class="link-tc"><h4>590 000,00 руб.</h4></a>
-                      </div>
-                      <div class="reception">
-                        <p>Прием заявок до:</p>
-                        <a href="#" class="link-tc"><h4>25.05.2024 г.</h4></a>
-                      </div>
-                    </div>
-                    <div class="more-data-card">
-                      <div class="icon-links-data">
-                        <a href="#" class="icon-link"
-                          ><i class="msf">desktop_windows</i></a
-                        >
-                        <a href="#" class="icon-link"
-                          ><i class="msf">delete</i></a
-                        >
-                      </div>
-                      <a class="btn-atp-link" href="#">ЭТП</a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card-sell">
-                  <div class="top-card">
-                    <a href="#"><img src="images/image1.png" /></a>
-                    <a href="#" class="fav_ads"><i class="mso">favorite</i></a>
-                    <img
-                      class="svg-logo-card"
-                      alt="Лого для карточки"
-                      src="images/svg/logo-card.svg"
-                    />
-                    <div class="status">
-                      <img src="images/svg/аuction.svg" />
-                      <p>аукцион</p>
-                    </div>
-                  </div>
-                  <div class="bottom-card">
-                    <a href="#" class="link-tc"
-                      ><h3>
-                        Право заключения договора<br />аренды земельного участка
-                        с<br />кадастровым номером 39:05:050...
-                      </h3></a
-                    >
-                    <div class="data-card">
-                      <div class="start-price">
-                        <p>Начальная цена:</p>
-                        <a href="#" class="link-tc"><h4>590 000,00 руб.</h4></a>
-                      </div>
-                      <div class="reception">
-                        <p>Прием заявок до:</p>
-                        <a href="#" class="link-tc"><h4>25.05.2024 г.</h4></a>
-                      </div>
-                    </div>
-                    <div class="more-data-card">
-                      <div class="icon-links-data">
-                        <a href="#" class="icon-link"
-                          ><i class="msf">desktop_windows</i></a
-                        >
-                        <a href="#" class="icon-link"
-                          ><i class="msf">delete</i></a
-                        >
-                      </div>
-                      <a class="btn-atp-link" href="#">ЭТП</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="lot-viewM announcement-m">
+            <div class="lot-view announcement">
               <div class="card-sell">
                 <div class="top-card">
-                  <a href="#"><img class="img-card" src="images/i4.png" /></a>
-                  <a href="#" class="fav_ads"
-                    ><img src="images/svg/heart-m.svg"
+                  <a href="#"
+                    ><img class="img-card" src="images/image1.png"
                   /></a>
+                  <a href="#" class="fav_ads"><i class="mso">favorite</i></a>
                   <img
                     class="svg-logo-card"
                     alt="Лого для карточки"
                     src="images/svg/logo-card.svg"
                   />
                   <div class="status">
-                    <img src="images/svg/аuction.svg" />
-                    <p>аукцион</p>
+                    <img src="images/svg/commynity.svg" />
+                    <p>публичное предложение</p>
                   </div>
                 </div>
                 <div class="bottom-card">
                   <a href="#" class="link-tc"
                     ><h3>
-                      Муниципальное имущество,<br />расположенное по адресу:<br />Российская
-                      Федерация, Калини.
+                      Право заключения договора<br />аренды земельного участка
+                      с<br />кадастровым номером
                     </h3></a
                   >
                   <div class="data-card">
@@ -656,12 +260,11 @@
                   </div>
                 </div>
               </div>
+
               <div class="card-sell">
                 <div class="top-card">
-                  <a href="#"><img class="img-card" src="images/i4.png" /></a>
-                  <a href="#" class="fav_ads"
-                    ><img src="images/svg/heart-m.svg"
-                  /></a>
+                  <a href="#"><img class="img-card" src="images/i2.png" /></a>
+                  <a href="#" class="fav_ads"><i class="mso">favorite</i></a>
                   <img
                     class="svg-logo-card"
                     alt="Лого для карточки"
@@ -675,8 +278,8 @@
                 <div class="bottom-card">
                   <a href="#" class="link-tc"
                     ><h3>
-                      Муниципальное имущество,<br />расположенное по адресу:<br />Российская
-                      Федерация, Калини.
+                      Нежилые помещения общей<br />площадью 1665,7 кв.м.,<br />расположенные
+                      в здании,
                     </h3></a
                   >
                   <div class="data-card">
@@ -702,12 +305,11 @@
                   </div>
                 </div>
               </div>
+
               <div class="card-sell">
                 <div class="top-card">
-                  <a href="#"><img class="img-card" src="images/i4.png" /></a>
-                  <a href="#" class="fav_ads"
-                    ><img src="images/svg/heart-m.svg"
-                  /></a>
+                  <a href="#"><img class="img-card" src="images/i3.png" /></a>
+                  <a href="#" class="fav_ads"><i class="mso">favorite</i></a>
                   <img
                     class="svg-logo-card"
                     alt="Лого для карточки"
@@ -722,7 +324,7 @@
                   <a href="#" class="link-tc"
                     ><h3>
                       Муниципальное имущество,<br />расположенное по адресу:<br />Российская
-                      Федерация, Калини.
+                      Федерация,
                     </h3></a
                   >
                   <div class="data-card">
@@ -748,12 +350,11 @@
                   </div>
                 </div>
               </div>
+
               <div class="card-sell">
                 <div class="top-card">
-                  <a href="#"><img class="img-card" src="images/i4.png" /></a>
-                  <a href="#" class="fav_ads"
-                    ><img src="images/svg/heart-m.svg"
-                  /></a>
+                  <a href="#"><img class="img-card" src="images/i2.png" /></a>
+                  <a href="#" class="fav_ads"><i class="mso">favorite</i></a>
                   <img
                     class="svg-logo-card"
                     alt="Лого для карточки"
@@ -767,8 +368,8 @@
                 <div class="bottom-card">
                   <a href="#" class="link-tc"
                     ><h3>
-                      Муниципальное имущество,<br />расположенное по адресу:<br />Российская
-                      Федерация, Калини.
+                      Нежилые помещения общей<br />площадью 1665,7 кв.м.,<br />расположенные
+                      в здании,
                     </h3></a
                   >
                   <div class="data-card">
@@ -794,12 +395,11 @@
                   </div>
                 </div>
               </div>
+
               <div class="card-sell">
                 <div class="top-card">
                   <a href="#"><img class="img-card" src="images/i4.png" /></a>
-                  <a href="#" class="fav_ads"
-                    ><img src="images/svg/heart-m.svg"
-                  /></a>
+                  <a href="#" class="fav_ads"><i class="mso">favorite</i></a>
                   <img
                     class="svg-logo-card"
                     alt="Лого для карточки"
@@ -814,7 +414,7 @@
                   <a href="#" class="link-tc"
                     ><h3>
                       Муниципальное имущество,<br />расположенное по адресу:<br />Российская
-                      Федерация, Калини.
+                      Федерация,
                     </h3></a
                   >
                   <div class="data-card">
@@ -840,12 +440,13 @@
                   </div>
                 </div>
               </div>
+
               <div class="card-sell">
                 <div class="top-card">
-                  <a href="#"><img class="img-card" src="images/i4.png" /></a>
-                  <a href="#" class="fav_ads"
-                    ><img src="images/svg/heart-m.svg"
+                  <a href="#"
+                    ><img class="img-card" src="images/image1.png"
                   /></a>
+                  <a href="#" class="fav_ads"><i class="mso">favorite</i></a>
                   <img
                     class="svg-logo-card"
                     alt="Лого для карточки"
@@ -859,8 +460,8 @@
                 <div class="bottom-card">
                   <a href="#" class="link-tc"
                     ><h3>
-                      Муниципальное имущество,<br />расположенное по адресу:<br />Российская
-                      Федерация, Калини.
+                      Право заключения договора<br />аренды земельного участка
+                      с<br />кадастровым номером
                     </h3></a
                   >
                   <div class="data-card">
@@ -886,12 +487,11 @@
                   </div>
                 </div>
               </div>
+
               <div class="card-sell">
                 <div class="top-card">
-                  <a href="#"><img class="img-card" src="images/i4.png" /></a>
-                  <a href="#" class="fav_ads"
-                    ><img src="images/svg/heart-m.svg"
-                  /></a>
+                  <a href="#"><img class="img-card" src="images/i3.png" /></a>
+                  <a href="#" class="fav_ads"><i class="mso">favorite</i></a>
                   <img
                     class="svg-logo-card"
                     alt="Лого для карточки"
@@ -906,7 +506,7 @@
                   <a href="#" class="link-tc"
                     ><h3>
                       Муниципальное имущество,<br />расположенное по адресу:<br />Российская
-                      Федерация, Калини.
+                      Федерация,
                     </h3></a
                   >
                   <div class="data-card">
@@ -932,12 +532,13 @@
                   </div>
                 </div>
               </div>
+
               <div class="card-sell">
                 <div class="top-card">
-                  <a href="#"><img class="img-card" src="images/i4.png" /></a>
-                  <a href="#" class="fav_ads"
-                    ><img src="images/svg/heart-m.svg"
+                  <a href="#"
+                    ><img class="img-card" src="images/image1.png"
                   /></a>
+                  <a href="#" class="fav_ads"><i class="mso">favorite</i></a>
                   <img
                     class="svg-logo-card"
                     alt="Лого для карточки"
@@ -951,8 +552,55 @@
                 <div class="bottom-card">
                   <a href="#" class="link-tc"
                     ><h3>
-                      Муниципальное имущество,<br />расположенное по адресу:<br />Российская
-                      Федерация, Калини.
+                      Право заключения договора<br />аренды земельного участка
+                      с<br />кадастровым номером
+                    </h3></a
+                  >
+                  <div class="data-card">
+                    <div class="start-price">
+                      <p>Начальная цена:</p>
+                      <a href="#" class="link-tc"><h4>590 000,00 руб.</h4></a>
+                    </div>
+                    <div class="reception">
+                      <p>Прием заявок до:</p>
+                      <a href="#" class="link-tc"><h4>25.05.2024 г.</h4></a>
+                    </div>
+                  </div>
+                  <div class="more-data-card">
+                    <div class="icon-links-data">
+                      <a href="#" class="icon-link"
+                        ><i class="msf">desktop_windows</i></a
+                      >
+                      <a href="#" class="icon-link"
+                        ><i class="msf">delete</i></a
+                      >
+                    </div>
+                    <a class="btn-atp-link" href="#">ЭТП</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-sell">
+                <div class="top-card">
+                  <a href="#"
+                    ><img class="img-card" src="images/image1.png"
+                  /></a>
+                  <a href="#" class="fav_ads"><i class="mso">favorite</i></a>
+                  <img
+                    class="svg-logo-card"
+                    alt="Лого для карточки"
+                    src="images/svg/logo-card.svg"
+                  />
+                  <div class="status">
+                    <img src="images/svg/аuction.svg" />
+                    <p>аукцион</p>
+                  </div>
+                </div>
+                <div class="bottom-card">
+                  <a href="#" class="link-tc"
+                    ><h3>
+                      Право заключения договора<br />аренды земельного участка
+                      с<br />кадастровым номером
                     </h3></a
                   >
                   <div class="data-card">
@@ -979,6 +627,7 @@
                 </div>
               </div>
             </div>
+
             <div class="page-slot-card">
               <div class="page-slot">
                 <div class="first_page">
@@ -1016,67 +665,39 @@
           </div>
         </div>
       </main>
-      <footer>
-        <div class="footer-block">
-          <div class="block-info">
-            <div class="more-link">
-              <a href="#">Обучение</a>
-              <a href="#" style="margin-top: 4px">Поиск лотов</a>
-              <a href="#" style="margin-top: 4px">Услуги</a>
-              <a href="#" style="margin-top: 4px">О компании</a>
-              <a href="#" style="margin-top: 4px">Контакты</a>
-            </div>
-            <div class="more-link">
-              <a href="#">Политика обработки<br />персональных данных</a>
-              <a href="#" style="margin-top: 4px">Договор оферты</a>
-              <a href="#" style="margin-top: 4px">Реквизиты</a>
-            </div>
-          </div>
-          <div class="social-addres-link">
-            <div class="social-link">
-              <a href="#"><img src="images/svg/vk.svg" /></a>
-              <a href="#"><img src="images/svg/ok.svg" /></a>
-              <a href="#"><img src="images/svg/telegram.svg" /></a>
-            </div>
-            <div class="addres-number">
-              <a class="phone-footer" href="tel:+79999999999"
-                >+7 999 999 99 99</a
-              >
-              <p class="addres-footer">
-                г.Калининград, ул. Площадь Маршала Василевского, 2
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="footer-block-m">
-            <div class="social-link">
-                <a href="#"><img src="images/svg/vk.svg"></a>
-                <a href="#"><img src="images/svg/ok.svg"></a>
-                <a href="#"><img src="images/svg/telegram.svg"></a>
-            </div>
-            <div class="addres-number">
-                <a class="phone-footer" href="tel:+79999999999">+7 999 999 99 99</a>
-                <p class="addres-footer">г.Калининград, ул. Площадь Маршала Василевского, 2</p>
-            </div>
-            </div>
-            <div class="block-info">
-                <div class="more-link">
-                    <a href="#">Обучение</a>
-                    <a href="#" style="margin-top: 4px;">Поиск лотов</a>
-                    <a href="#" style="margin-top: 4px;">Услуги</a>
-                    <a href="#" style="margin-top: 4px;">О компании</a>
-                    <a href="#" style="margin-top: 4px;">Контакты</a>
-                </div>
-                <div class="more-link">
-                    <a href="#">Политика обработки<br>персональных данных</a>
-                    <a href="#" style="margin-top: 4px;">Договор оферты</a>
-                    <a href="#" style="margin-top: 4px;">Реквизиты</a>
-                </div>
-            </div>
-
-        </div>
-      </footer>
     </div>
+    <footer>
+      <div class="footer-block">
+        <div class="block-info">
+          <div class="more-link">
+            <a href="#">Обучение</a>
+            <a href="#" style="margin-top: 4px">Поиск лотов</a>
+            <a href="#" style="margin-top: 4px">Услуги</a>
+            <a href="#" style="margin-top: 4px">О компании</a>
+            <a href="#" style="margin-top: 4px">Контакты</a>
+          </div>
+          <div class="more-link">
+            <a href="#">Политика обработки<br />персональных данных</a>
+            <a href="#" style="margin-top: 4px">Договор оферты</a>
+            <a href="#" style="margin-top: 4px">Реквизиты</a>
+          </div>
+        </div>
+        <div class="social-addres-link">
+          <div class="social-link">
+            <a href="#"><img src="images/svg/vk.svg" /></a>
+            <a href="#"><img src="images/svg/ok.svg" /></a>
+            <a href="#"><img src="images/svg/telegram.svg" /></a>
+          </div>
+          <div class="addres-number">
+            <a class="phone-footer" href="tel:+79999999999">+7 999 999 99 99</a>
+            <p class="addres-footer">
+              г.Калининград, ул. Площадь Маршала Василевского, 2
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script type="text/javascript" src="js/slider_price.js"></script>
   </body>
 </html>

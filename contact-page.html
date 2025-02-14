@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/adaptive-contact.css">
+    <link rel="stylesheet" href="css/adaptive.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
     
@@ -17,30 +19,53 @@
     <div class="main-content">
         <header>
             <div class="header-logo">
-                <div class="logo">
-                    <a href="#" style="display: table;"><img src="images/svg/logo.svg" alt="Лого" style="display: block;"></a>
-                </div>
+              <div class="logo">
+                <img
+                  class="logos desktop-logo"
+                  src="images/svg/logo.svg"
+                  alt="Лого"
+                  style="display: block"
+                />
+                <img
+                  class="logos mobile-logo"
+                  src="images/svg/logo-mobile.svg"
+                  alt="Лого"
+                  style="display: none"
+                />
+              </div>
             </div>
             <nav>
-                <a class="nav_item" href="#">обучение</a>
-                <a class="nav_item" href="#">услуги</a>
-                <a class="nav_item" href="#">о компании</a>
-                <a class="nav_item" href="#">контакты</a>
-                <a class="nav_item" href="#">новости</a>
+              <a class="nav_item" href="#">обучение</a>
+              <a class="nav_item" href="#">услуги</a>
+              <a class="nav_item" href="#">о компании</a>
+              <a class="nav_item" href="#">контакты</a>
+              <a class="nav_item" href="#">новости</a>
+              <a class="menu">
+                <hr />
+                <hr />
+                <hr />
+              </a>
+              <div class="m-menu">
+                <a href="#">Обучение</a>
+                <a href="#">Услуги</a>
+                <a href="#">О компании</a>
+                <a href="#">Контакты</a>
+                <a href="#">Вход</a>
+              </div>
             </nav>
             <div class="location">
-                <i class="msf">location_on</i>
-                <div class="selected-location">
-                    <div class="region">
-                        <p>Калининградская обл.</p>
-                    </div>
-                    <div class="switch-rg">
-                        <a class="switch" href="#">выбрать регион</a>
-                    </div>
+              <i class="msf">location_on</i>
+              <div class="selected-location">
+                <div class="region">
+                  <p>Калининградская обл.</p>
                 </div>
+                <div class="switch-rg">
+                  <a class="switch" href="#">выбрать регион</a>
+                </div>
+              </div>
             </div>
             <a class="button-login" href="#">Вход</a>
-        </header>
+          </header>
         <main>
             <h1 class="page-n">Контакты</h1>
             <p class="loca-p">Наш офис находится в городе <span>Калининград, ул. Площадь Маршала Василевского, 2</span></p>
@@ -85,36 +110,38 @@
                 </div>
             </section>
         </main>
-        <footer>
-            <div class="footer-block">
-                <div class="block-info">
-                    <div class="more-link">
-                        <a href="#">Обучение</a>
-                        <a href="#" style="margin-top: 4px;">Поиск лотов</a>
-                        <a href="#" style="margin-top: 4px;">Услуги</a>
-                        <a href="#" style="margin-top: 4px;">О компании</a>
-                        <a href="#" style="margin-top: 4px;">Контакты</a>
-                    </div>
-                    <div class="more-link">
-                        <a href="#">Политика обработки<br>персональных данных</a>
-                        <a href="#" style="margin-top: 4px;">Договор оферты</a>
-                        <a href="#" style="margin-top: 4px;">Реквизиты</a>
-                    </div>
-                </div>
-                <div class="social-addres-link">
-                    <div class="social-link">
-                        <a href="#"><img src="images/svg/vk.svg"></a>
-                        <a href="#"><img src="images/svg/ok.svg"></a>
-                        <a href="#"><img src="images/svg/telegram.svg"></a>
-                    </div>
-                    <div class="addres-number">
-                        <a class="phone-footer" href="tel:+79999999999">+7 999 999 99 99</a>
-                        <p class="addres-footer">г.Калининград, ул. Площадь Маршала Василевского, 2</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
     </div>
     <script src="script.js"></script>
 </body>
+<footer>
+    <div class="footer-block">
+      <div class="block-info">
+        <div class="more-link">
+          <a href="#">Обучение</a>
+          <a href="#" style="margin-top: 4px">Поиск лотов</a>
+          <a href="#" style="margin-top: 4px">Услуги</a>
+          <a href="#" style="margin-top: 4px">О компании</a>
+          <a href="#" style="margin-top: 4px">Контакты</a>
+        </div>
+        <div class="more-link">
+          <a href="#">Политика обработки<br />персональных данных</a>
+          <a href="#" style="margin-top: 4px">Договор оферты</a>
+          <a href="#" style="margin-top: 4px">Реквизиты</a>
+        </div>
+      </div>
+      <div class="social-addres-link">
+        <div class="social-link">
+          <a href="#"><img src="images/svg/vk.svg" /></a>
+          <a href="#"><img src="images/svg/ok.svg" /></a>
+          <a href="#"><img src="images/svg/telegram.svg" /></a>
+        </div>
+        <div class="addres-number">
+          <a class="phone-footer" href="tel:+79999999999">+7 999 999 99 99</a>
+          <p class="addres-footer">
+            г.Калининград, ул. Площадь Маршала Василевского, 2
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
 </html>
