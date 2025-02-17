@@ -1,6 +1,7 @@
 @media (max-width: 940px) {
   .info-card {
     flex-direction: column;
+    margin-top: 10px;
   }
 
   .training-profession {
@@ -96,6 +97,7 @@
   .about h2 {
     font-size: 16px;
     line-height: 18.75px;
+    margin-bottom: 0px;
   }
 
   .about p {
@@ -126,12 +128,17 @@
   }
 
   .ait p {
-    margin-top: 29px;
+    margin-top: 10px;
+    height: 29px;
     text-align: center;
     font-family: "Roboto", sans-serif;
     font-size: 10px;
     font-weight: bold;
     line-height: 16px;
+  }
+  .about-me {
+    margin-top: 10px;
+    margin-bottom: 5px;
   }
 
   .link-help-p {
@@ -231,9 +238,21 @@
     scroll-snap-type: x mandatory;
   }
   article.offers .items .item.bg-3 {
-    background: url("../images/ramka-start2-m.webp") no-repeat center center;
+    /*background: url("../images/ramka-start2-m.webp") no-repeat center center;*/
+    border-radius: 6px;
+    border: 1px solid black;
     height: 290px;
     width: 252px;
+  }
+  .tops {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .longer {
+    padding-right: 10px;
+  }
+  article.offers .items .item.bg-4 .price {
+    margin-bottom: 5px;
   }
 
   article.offers .items .item .name-plash {

@@ -23,6 +23,7 @@
   .main-info h1 {
     font-size: 16px;
     line-height: 18.75px;
+    margin-top: 10px;
   }
 
   .photo-block p {
@@ -71,8 +72,11 @@
   }
   .r-link {
     display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  .info-more-slot {
+    margin-top: 15px;
   }
   .btn-top {
     display: flex;
@@ -83,6 +87,20 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 15px;
+  }
+  .btn-top .f-btn {
+    padding: 5px 10px;
+  }
+  .btn-top .btn-a {
+    padding: 5px 10px;
+  }
+  .big .info-sec {
+    width: 100%;
+    margin-top: 5px;
+  }
+  .big {
+    flex-wrap: wrap;
   }
   .info-text {
     justify-content: space-between;
@@ -90,13 +108,28 @@
   .info-text .name-info {
     width: fit-content;
   }
+  .zayavka {
+    width: calc(50% - 5px);
+    text-align: center;
+  }
+  .ryad .buttons .etp {
+    width: calc(50% - 5px);
+    text-align: center;
+  }
+  .ryad .r-link i {
+    width: 100%;
+    text-align: center;
+  }
+  .ryad .r-link a {
+    width: calc(25% - 5px);
+  }
   .trening-block {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-top: 50px;
-    padding-bottom: 95px;
+    padding-bottom: 66px;
     background-image: none;
   }
   .get-more-info {
@@ -106,5 +139,8 @@
     text-align: center;
     margin-left: 0px;
     margin-top: 20px;
+  }
+  .main-info h1 {
+    width: 100%;
   }
 }

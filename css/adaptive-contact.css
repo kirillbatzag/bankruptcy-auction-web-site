@@ -14,4 +14,22 @@
     width: 100%;
     text-align: center;
   }
+  .page-n {
+    margin-top: 0px;
+    font-size: 25px;
+  }
+  .loca-p {
+    margin-top: 5px;
+  }
+  .cont {
+    font-size: 18px;
+  }
+  .time {
+    width: fit-content;
+    margin-right: 0px;
+    margin-left: 65px;
+  }
+  .social {
+    display: none;
+  }
 }

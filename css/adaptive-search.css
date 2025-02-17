@@ -35,9 +35,7 @@
   .separator {
     margin: 4px;
   }
-  .vpc {
-    display: none;
-  }
+
   .vm {
     display: block;
   }
@@ -56,6 +54,9 @@
   }
   .trening-block {
     display: none;
+  }
+  .page-slot-card {
+    margin-top: 5px;
   }
   .ss {
     display: flex;
